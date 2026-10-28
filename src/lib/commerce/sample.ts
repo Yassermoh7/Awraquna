@@ -1,5 +1,6 @@
 import 'server-only';
 import { appendFile, mkdir } from 'node:fs/promises';
+import { tmpdir } from 'node:os';
 import path from 'node:path';
 import catalog from '@/data/catalog.json';
 import { filterProducts } from './filter';
@@ -10,7 +11,11 @@ import type { Category, CommerceProvider, Industry, Lead, OrderRequest, Product,
  * written to ./data/*.jsonl. Used until Odoo credentials are configured.
  */
 const products = catalog.products as Product[];
-const DATA_DIR = path.join(process.cwd(), 'data');
+// Serverless hosts (Vercel) only allow writing to the temp folder, and it doesn't persist
+// between requests: there, submissions are also logged so they show in the runtime logs.
+// Connect Odoo (COMMERCE_SOURCE=odoo) before launch so requests land in the CRM.
+const READ_ONLY_FS = !!process.env.VERCEL;
+const DATA_DIR = READ_ONLY_FS ? path.join(tmpdir(), 'awraquna-data') : path.join(process.cwd(), 'data');
 
 const reference = (prefix: string) =>
   `${prefix}-${new Date().toISOString().slice(2, 10).replace(/-/g, '')}-${Math.random().toString(36).slice(2, 6).toUpperCase()}`;
@@ -18,6 +23,7 @@ const reference = (prefix: string) =>
 async function record(file: string, payload: unknown): Promise<void> {
   await mkdir(DATA_DIR, { recursive: true });
   await appendFile(path.join(DATA_DIR, file), JSON.stringify(payload) + '\n', 'utf8');
+  if (READ_ONLY_FS) console.log(`[submission] ${file}`, JSON.stringify(payload));
 }
 
 export const sampleProvider: CommerceProvider = {
