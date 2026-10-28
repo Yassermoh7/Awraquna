@@ -1,0 +1,103 @@
+/*
+ * Desktop: the circles are positioned in the hero scene's own coordinates
+ * (percent of the 2400×1600 photo) so they always sit behind the steps and
+ * the book stack. The scene is a size container, so cqw scales with it.
+ */
+.circles { position: absolute; inset: 0; z-index: 2; pointer-events: none; }
+
+.circle {
+  --soft: cubic-bezier(.16, 1, .3, 1);
+  position: absolute; display: block; text-decoration: none; outline: none; pointer-events: auto;
+  width: var(--d); height: var(--d); left: calc(var(--x) - var(--d) / 2); top: calc(var(--y) - var(--d) / 2);
+  border-radius: 50%;
+  transition: opacity .9s var(--soft), filter .9s var(--soft);
+}
+/* Same placement as the approved mockup: centres at 28.2% / 71.8% of the width, Ø 43% of the width,
+   resting on the step edge (scene 2048×1586: centres at y 865, step edge at y 1280). */
+.circle[data-brand='plus'] { --x: 28.2%; --y: 54.54%; --d: 43cqw; --brand: var(--plus-deep); --brand-lo: #1f4f78; --brand-hi: var(--plus); --face: #fff; }
+.circle[data-brand='legal'] { --x: 71.8%; --y: 54.54%; --d: 43cqw; --brand: #6a2a33; --brand-lo: #4b1f26; --brand-hi: #9a5560; --face: #faf7f5; }
+
+.circle[data-active] { z-index: 2; }
+.circles[data-active] .circle:not([data-active]) { opacity: calc(.6 - var(--enter, 0) * .6); filter: saturate(.75); }
+
+.orbWrap { position: relative; width: 100%; height: 100%; transition: transform 1.1s var(--soft); }
+.circle[data-active] .orbWrap { transform: scale(1.08); }
+.circles[data-active] .circle:not([data-active]) .orbWrap { transform: scale(.95); }
+
+.orb {
+  position: absolute; inset: 0; border-radius: 50%; overflow: hidden; isolation: isolate; background: var(--face);
+  box-shadow: 0 50px 80px -40px rgba(40, 24, 20, .5), 0 14px 30px -18px rgba(40, 24, 20, .3);
+}
+.orb::after { /* pale glass rim, as in the mockup */
+  content: ''; position: absolute; inset: 0; z-index: 3; border-radius: 50%; pointer-events: none;
+  box-shadow: inset 0 0 0 3px rgba(255, 255, 255, .32), inset 0 0 0 1px rgba(255, 255, 255, .55);
+}
+
+.shot {
+  position: absolute; left: 50%; top: 0; width: 112%; opacity: 0;
+  transform: translate(-50%, 0); will-change: transform; transition: transform 1.1s var(--soft), opacity .7s var(--soft);
+}
+.shot img { width: 100%; height: auto; }
+.circle[data-active] .shot { opacity: 1; }
+
+.face {
+  position: absolute; inset: 0; z-index: 2; display: grid; place-content: center; justify-items: center;
+  gap: 1.1cqw; padding: 14%; text-align: center; color: #fff;
+  background:
+    radial-gradient(120% 90% at 22% 18%, color-mix(in srgb, var(--brand-hi, #fff) 55%, transparent), transparent 58%),
+    radial-gradient(100% 100% at 80% 92%, var(--brand-lo), transparent 70%),
+    var(--brand);
+  transition: opacity .8s var(--soft) .05s;
+}
+.face::before { /* sunlight and leaf shadow falling across the circle, like the room */
+  content: ''; position: absolute; inset: 0; z-index: -1; opacity: .2; mix-blend-mode: soft-light;
+  background: repeating-linear-gradient(118deg, transparent 0 1.6cqw, rgba(0, 0, 0, .35) 1.6cqw 2.2cqw, transparent 2.2cqw 4.2cqw);
+  mask-image: radial-gradient(70% 60% at 30% 25%, #000, transparent 75%);
+}
+.logo { width: 70%; height: auto; filter: drop-shadow(0 2px 6px rgba(0, 0, 0, .18)); transition: transform 1.1s var(--soft); }
+.tagline { font-size: max(12px, 1.05cqw); font-weight: 500; letter-spacing: .02em; opacity: .95; }
+.explore {
+  display: inline-flex; align-items: center; gap: .7cqw; margin-top: .5cqw;
+  border: 1.5px solid rgba(255, 255, 255, .9); border-radius: var(--radius-btn); padding: .65cqw 1.7cqw;
+  font-size: max(13px, 1.05cqw); font-weight: 500; transition: background .4s, color .4s;
+}
+.arrow { transition: transform .4s var(--soft); }
+:global([dir='rtl']) .arrow { transform: scaleX(-1); }
+.circle:hover .explore, .circle:focus-visible .explore { background: #fff; color: var(--brand); }
+
+.circle[data-active] .face { opacity: 0; }
+.circle[data-active] .logo { transform: scale(1.45); }
+.circle:focus-visible .orb { outline: 3px solid var(--brand); outline-offset: 8px; }
+
+.ring { position: absolute; inset: -1.1cqw; width: calc(100% + 2.2cqw); height: calc(100% + 2.2cqw); transform: rotate(-90deg); pointer-events: none; }
+.bar { fill: none; stroke: #fff; stroke-width: .9; stroke-linecap: round; opacity: 0; transition: opacity .5s; stroke-dasharray: 308; stroke-dashoffset: 308; filter: drop-shadow(0 0 2px rgba(0, 0, 0, .35)); }
+.circle[data-active] .bar { opacity: .95; }
+
+/* Hint sits above the steps (the circle's lower part is hidden behind them) */
+.hint {
+  position: absolute; left: 50%; top: 74%; z-index: 4; transform: translate(-50%, 6px);
+  white-space: nowrap; font-size: 12px; font-weight: 600; color: var(--ink); background: rgba(255, 255, 255, .94);
+  padding: 7px 14px; border-radius: 999px; box-shadow: 0 6px 20px -8px rgba(0, 0, 0, .3);
+  opacity: 0; transition: opacity .6s var(--soft) .6s, transform .6s var(--soft) .6s; pointer-events: none;
+}
+.hint::before { content: '↓ '; color: var(--brand); }
+.circle[data-active] .hint { opacity: calc(1 - var(--enter, 0) * 4); transform: translate(-50%, 0); }
+
+.portal {
+  position: fixed; inset: 0; z-index: 60; pointer-events: none;
+  background-repeat: no-repeat; background-size: 100% auto; background-position: 0 0;
+  clip-path: circle(0px at 50% 50%); visibility: hidden; will-change: clip-path, background-size, background-position;
+}
+.portal[data-on='true'] { visibility: visible; }
+
+/* Phones: no scene coordinates — the circles stack in the flow */
+@media (max-width: 760px) {
+  .circles { position: static; display: grid; justify-items: center; gap: 18px; pointer-events: auto; }
+  .circle { position: relative; left: auto; top: auto; --d: min(74vw, 330px) !important; }
+  .face { gap: 10px; }
+  .tagline { font-size: 13px; }
+  .explore { gap: 8px; padding: 8px 20px; font-size: 14px; margin-top: 4px; }
+  .circle[data-active] .orbWrap { transform: scale(1.03); }
+  .ring { display: none; }
+  .hint { position: fixed; top: auto; bottom: calc(20px + env(safe-area-inset-bottom)); }
+}

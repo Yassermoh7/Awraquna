@@ -1,0 +1,123 @@
+/* Shared building blocks for the Plus pages. Tokens are set on .plus in layout.module.css. */
+
+.container { max-width: 1280px; margin: 0 auto; padding-inline: 32px; }
+
+.section { padding-block: 104px; }
+.sectionAlt { padding-block: 104px; background: var(--bg-2); }
+.sectionTight { padding-block: 72px; }
+
+/* Section heading: a large serif title, an optional lead, and an optional link aligned to the end. */
+.secHead { display: flex; align-items: end; justify-content: space-between; gap: 32px; margin-bottom: 40px; }
+.secHead h2 { font-size: clamp(34px, 3.4vw, 50px); line-height: 1.04; margin: 0 0 12px; text-wrap: balance; }
+.secHead p { color: var(--muted); font-size: 17.5px; max-width: 38em; }
+.secHead > a { flex: none; margin-bottom: 6px; }
+
+/* Page heading used by inner pages */
+.pageHead { position: relative; padding-block: 40px 56px; background: linear-gradient(180deg, var(--blue-50) 0%, #fff 100%); overflow: hidden; }
+.pageHead h1 { font-size: clamp(42px, 5vw, 68px); line-height: 1; margin: 22px 0 16px; text-wrap: balance; max-width: 20ch; }
+.pageHead p { color: var(--ink-2); font-size: 18.5px; max-width: 40em; }
+:global([dir='rtl']) .pageHead h1 { line-height: 1.25; }
+
+.breadcrumbs ol { list-style: none; display: flex; flex-wrap: wrap; gap: 6px; font-size: 13.5px; color: var(--muted); }
+.breadcrumbs li:not(:last-child)::after { content: '/'; margin-inline-start: 6px; color: #b8c2cd; }
+.breadcrumbs a { text-decoration: none; }
+.breadcrumbs a:hover { color: var(--ink); text-decoration: underline; }
+
+/* Buttons */
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 10px; height: var(--btn-h); padding: var(--btn-pad);
+  border-radius: var(--radius-btn); font: var(--btn-font); border: 1px solid transparent; cursor: pointer;
+  text-decoration: none; white-space: nowrap;
+  transition: background .2s, border-color .2s, box-shadow .2s, color .2s, transform .2s var(--ease);
+}
+.btn:active { transform: scale(.98); }
+.btn svg { width: 18px; height: 18px; flex: none; transition: transform .25s var(--ease); }
+.btn:hover svg[data-icon='arrow'] { transform: translateX(3px); }
+:global([dir='rtl']) .btn svg[data-icon='arrow'],
+:global([dir='rtl']) .linkArrow svg[data-icon='arrow'] { transform: scaleX(-1); }
+:global([dir='rtl']) .btn:hover svg[data-icon='arrow'],
+:global([dir='rtl']) .linkArrow:hover svg[data-icon='arrow'] { transform: scaleX(-1) translateX(3px); }
+.btn:disabled { opacity: .6; cursor: progress; }
+.primary { background: var(--ink); color: #fff; }
+.primary:hover { background: #1b3d5f; }
+.blue { background: var(--blue); color: #fff; }
+.blue:hover { background: var(--blue-600); }
+.ghost { background: transparent; color: var(--ink); border-color: var(--ink); }
+.ghost:hover { background: var(--ink); color: #fff; }
+.dark { background: var(--ink); color: #fff; }
+.dark:hover { background: #1b3d5f; }
+.wa { background: var(--wa); color: #fff; }
+.wa:hover { background: #179a4d; }
+.sm { height: var(--btn-h-sm); padding: 0 16px; font-size: 14px; }
+.block { width: 100%; }
+
+.linkArrow { display: inline-flex; align-items: center; gap: 8px; font-weight: 600; color: var(--blue-600); text-decoration: none; }
+.linkArrow svg { width: 16px; height: 16px; transition: transform .25s var(--ease); }
+.linkArrow:hover { color: var(--ink); }
+.linkArrow:hover svg[data-icon='arrow'] { transform: translateX(3px); }
+
+/* Forms */
+.field { display: grid; gap: 6px; align-content: start; }
+.field label { font-size: 13.5px; font-weight: 600; color: var(--ink-2); }
+.field label small { font-weight: 400; color: var(--muted); }
+.input, .select, .textarea {
+  width: 100%; border: 1px solid #cfd8e2; border-radius: var(--radius-input); background: #fff; font-size: 15px;
+  transition: border-color .2s, box-shadow .2s;
+}
+.input, .select { height: 48px; padding: 0 14px; }
+.textarea { padding: 12px 14px; min-height: 120px; resize: vertical; }
+.select {
+  appearance: none; padding-inline-end: 34px;
+  background: #fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 6'%3E%3Cpath d='M1 1l4 4 4-4' fill='none' stroke='%235B6B7D' stroke-width='1.5'/%3E%3C/svg%3E") no-repeat right 14px center / 10px;
+}
+:global([dir='rtl']) .select { background-position: left 14px center; }
+.input:focus, .select:focus, .textarea:focus { outline: none; border-color: var(--blue); box-shadow: 0 0 0 4px var(--blue-50); }
+.input[aria-invalid='true'], .select[aria-invalid='true'], .textarea[aria-invalid='true'] { border-color: #c0392b; }
+.fieldError { font-size: 13px; color: #b03a2e; }
+.hint { font-size: 13px; color: var(--muted); }
+.formGrid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.span2 { grid-column: 1 / -1; }
+.honeypot { position: absolute; inset-inline-start: -10000px; width: 1px; height: 1px; overflow: hidden; }
+
+.alert { border-radius: var(--radius-input); padding: 12px 14px; font-size: 14.5px; background: #fdecea; color: #8a2a20; border: 1px solid #f5c6c0; }
+.success { border-radius: var(--r); padding: 28px; background: #eef8f1; border: 1px solid #c7e8d2; color: #1d4d2f; }
+.success h2, .success h3 { font-size: 26px; margin-bottom: 6px; color: #173f27; }
+.success p { margin-bottom: 8px; }
+.reference { display: inline-block; margin-top: 4px; font-weight: 700; font-size: 18px; letter-spacing: .04em; background: #fff; border-radius: var(--radius-input); padding: 6px 12px; border: 1px solid #c7e8d2; }
+
+.chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.chip {
+  display: inline-flex; align-items: center; gap: 6px; height: 38px; padding: 0 16px; border-radius: var(--radius-btn);
+  border: 1px solid var(--line); background: #fff; font-size: 14px; font-weight: 500; color: var(--ink-2); text-decoration: none;
+  white-space: nowrap; transition: border-color .2s, background .2s, color .2s;
+}
+.chip:hover { border-color: var(--ink); color: var(--ink); }
+.chip[aria-current='true'], .chip[aria-current='page'] { background: var(--ink); border-color: var(--ink); color: #fff; }
+.chip svg { width: 14px; height: 14px; }
+
+.prose { max-width: 760px; }
+.prose h2 { font-size: 30px; margin: 36px 0 10px; }
+.prose p { color: var(--ink-2); margin-bottom: 12px; font-size: 16.5px; }
+
+@media (max-width: 980px) {
+  .formGrid { grid-template-columns: 1fr; }
+  .section, .sectionAlt { padding-block: 80px; }
+}
+@media (max-width: 600px) {
+  .container { padding-inline: 18px; }
+  .section, .sectionAlt { padding-block: 64px; }
+  .sectionTight { padding-block: 48px; }
+  .secHead { flex-direction: column; align-items: flex-start; gap: 14px; margin-bottom: 28px; }
+  .secHead h2 { font-size: 34px; }
+  .pageHead { padding-block: 24px 40px; }
+  .pageHead h1 { font-size: 40px; }
+  .pageHead p { font-size: 16.5px; }
+  .btn { padding: 0 20px; }
+}
+
+/* Arrow links: an underline draws in from the reading start */
+@media (prefers-reduced-motion: no-preference) {
+  .linkArrow { background: linear-gradient(currentColor, currentColor) 0 100% / 0% 1.5px no-repeat; padding-bottom: 3px; transition: color .2s, background-size .45s var(--motion-ease); }
+  :global([dir='rtl']) .linkArrow { background-position: 100% 100%; }
+  .linkArrow:hover { background-size: 100% 1.5px; }
+}

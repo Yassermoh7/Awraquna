@@ -1,0 +1,38 @@
+.bar { display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap; }
+.scroller { max-width: 100%; overflow-x: auto; scrollbar-width: none; border-radius: calc(var(--radius-btn) + 4px); }
+.scroller::-webkit-scrollbar { display: none; }
+
+.list {
+  position: relative; display: inline-flex; gap: 2px; padding: 4px; border-radius: calc(var(--radius-btn) + 4px);
+  background: var(--bg-2); box-shadow: inset 0 0 0 1px var(--line);
+}
+:global([dir='rtl']) .list { direction: ltr; flex-direction: row-reverse; }
+.indicator {
+  position: absolute; top: 4px; bottom: 4px; inset-inline-start: 0; border-radius: var(--radius-btn); background: #fff;
+  box-shadow: 0 1px 2px rgba(15, 42, 68, .08), 0 6px 18px rgba(15, 42, 68, .12);
+  transition: transform .45s var(--ease), width .45s var(--ease);
+}
+:global([dir='rtl']) .indicator { left: 0; right: auto; }
+
+.tab {
+  position: relative; z-index: 1; display: inline-flex; align-items: center; gap: 10px; height: var(--btn-h-sm); padding: 0 18px;
+  border-radius: var(--radius-btn); font-weight: 500; font-size: 15px; color: var(--muted); white-space: nowrap; transition: color .25s;
+}
+.tab:hover { color: var(--ink); }
+.tab[aria-selected='true'] { color: var(--ink); font-weight: 600; }
+.tab:focus-visible { outline: 3px solid var(--blue); outline-offset: -3px; }
+.icon { display: grid; place-items: center; width: 22px; height: 22px; color: var(--blue-600); }
+.icon svg { width: 20px; height: 20px; }
+.count {
+  min-width: 24px; height: 22px; padding: 0 7px; border-radius: 999px; display: inline-grid; place-items: center;
+  font-size: 12px; font-weight: 600; background: var(--line); color: var(--ink-2); transition: background .25s, color .25s;
+}
+.tab[aria-selected='true'] .count { background: var(--ink); color: #fff; }
+
+.panel { margin-top: 28px; }
+.panel:focus-visible { outline: 3px solid var(--blue); outline-offset: 6px; border-radius: 14px; }
+
+@media (max-width: 600px) {
+  .scroller { margin-inline: -18px; padding-inline: 18px; border-radius: 0; }
+  .tab { height: 42px; padding: 0 14px; font-size: 14px; gap: 8px; }
+}

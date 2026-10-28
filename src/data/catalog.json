@@ -1,0 +1,2109 @@
+{
+ "categories": [
+  {
+   "slug": "thermal-paper-rolls-13",
+   "name": "Thermal paper rolls",
+   "nameAr": "رولات الورق الحراري",
+   "parent": null
+  },
+  {
+   "slug": "thermal-paper-rolls-cashier-roll-16",
+   "name": "Cashier rolls",
+   "nameAr": "رولات الكاشير",
+   "parent": "thermal-paper-rolls-13"
+  },
+  {
+   "slug": "thermal-paper-rolls-span-roll-17",
+   "name": "Span (mada) rolls",
+   "nameAr": "رولات مدى",
+   "parent": "thermal-paper-rolls-13"
+  },
+  {
+   "slug": "thermal-paper-rolls-handheld-roll-19",
+   "name": "Handheld rolls",
+   "nameAr": "رولات الأجهزة المحمولة",
+   "parent": "thermal-paper-rolls-13"
+  },
+  {
+   "slug": "thermal-label-rolls-8",
+   "name": "Label rolls",
+   "nameAr": "رولات الملصقات",
+   "parent": null
+  },
+  {
+   "slug": "thermal-label-rolls-thermal-labels-20",
+   "name": "Thermal labels",
+   "nameAr": "ملصقات حرارية",
+   "parent": "thermal-label-rolls-8"
+  },
+  {
+   "slug": "thermal-label-rolls-date-price-labels-21",
+   "name": "Date & price labels",
+   "nameAr": "ملصقات التاريخ والسعر",
+   "parent": "thermal-label-rolls-8"
+  },
+  {
+   "slug": "thermal-label-rolls-polypropylene-labels-22",
+   "name": "Polypropylene labels",
+   "nameAr": "ملصقات بولي بروبيلين",
+   "parent": "thermal-label-rolls-8"
+  },
+  {
+   "slug": "thermal-ribbon-12",
+   "name": "Thermal ribbons",
+   "nameAr": "أشرطة الطباعة الحرارية",
+   "parent": null
+  },
+  {
+   "slug": "labelers-23",
+   "name": "Labelers",
+   "nameAr": "آلات التسعير والتاريخ",
+   "parent": null
+  },
+  {
+   "slug": "labelers-italian-two-line-date-labeler-24",
+   "name": "Two-line date labelers",
+   "nameAr": "آلات تاريخ بسطرين",
+   "parent": "labelers-23"
+  },
+  {
+   "slug": "labelers-italian-one-line-date-labeler-25",
+   "name": "One-line price labelers",
+   "nameAr": "آلات تسعير بسطر واحد",
+   "parent": "labelers-23"
+  },
+  {
+   "slug": "event-badge-14",
+   "name": "Event badges",
+   "nameAr": "بطاقات الفعاليات",
+   "parent": null
+  },
+  {
+   "slug": "one-use-gloves-11",
+   "name": "One-use gloves",
+   "nameAr": "قفازات الاستخدام الواحد",
+   "parent": null
+  }
+ ],
+ "industries": [
+  {
+   "slug": "retail-27",
+   "name": "Retail & supermarkets",
+   "nameAr": "التجزئة والسوبرماركت"
+  },
+  {
+   "slug": "restaurants-26",
+   "name": "Restaurants & food service",
+   "nameAr": "المطاعم وخدمات الطعام"
+  },
+  {
+   "slug": "logistics-30",
+   "name": "Logistics & warehousing",
+   "nameAr": "الخدمات اللوجستية والمستودعات"
+  },
+  {
+   "slug": "healthcare-31",
+   "name": "Healthcare & pharmacies",
+   "nameAr": "الرعاية الصحية والصيدليات"
+  }
+ ],
+ "products": [
+  {
+   "id": 283,
+   "slug": "dsg2616-dstg-2616-italian-date-sticker-green-2616-mm-1000-stickers-per-roll-2-lines-non-heatable-283",
+   "sku": "DSG2616",
+   "odooName": "[DSTG-2616] Italian Date Sticker Green 2616 mm - 1000 Stickers Per Roll 2 Lines - Non-Heatable",
+   "name": "Date label, two lines — Green 26 × 16 mm",
+   "nameAr": "ملصق تاريخ بسطرين — أخضر 26 × 16 مم",
+   "category": "thermal-label-rolls-8",
+   "subcategory": "thermal-label-rolls-date-price-labels-21",
+   "industries": [
+    "restaurants-26",
+    "retail-27"
+   ],
+   "specs": [
+    {
+     "key": "type",
+     "label": "Type",
+     "labelAr": "النوع",
+     "value": "Adhesive Label"
+    },
+    {
+     "key": "size",
+     "label": "Size",
+     "labelAr": "المقاس",
+     "value": "26 × 16 mm"
+    },
+    {
+     "key": "core",
+     "label": "Core",
+     "labelAr": "قطر اللب",
+     "value": "38–40 mm"
+    },
+    {
+     "key": "perCarton",
+     "label": "Per carton",
+     "labelAr": "الكمية في الكرتون",
+     "value": "36 rolls"
+    },
+    {
+     "key": "perRoll",
+     "label": "Labels per Roll",
+     "labelAr": "عدد الملصقات في الرول",
+     "value": "1000"
+    }
+   ],
+   "images": [
+    "/products/283-1.jpg",
+    "/products/283-2.jpg",
+    "/products/283-3.jpg"
+   ],
+   "duplicateSku": false
+  },
+  {
+   "id": 281,
+   "slug": "dsr2616-red-date-sticker-26x16mm-two-line-non-thermal-281",
+   "sku": "DSR2616",
+   "odooName": "Red Date Sticker 26x16mm - Two-Line - Non-Thermal",
+   "name": "Date label, two lines — Red 26 × 16 mm",
+   "nameAr": "ملصق تاريخ بسطرين — أحمر 26 × 16 مم",
+   "category": "thermal-label-rolls-8",
+   "subcategory": "thermal-label-rolls-date-price-labels-21",
+   "industries": [
+    "restaurants-26",
+    "retail-27"
+   ],
+   "specs": [
+    {
+     "key": "type",
+     "label": "Type",
+     "labelAr": "النوع",
+     "value": "Adhesive Label"
+    },
+    {
+     "key": "size",
+     "label": "Size",
+     "labelAr": "المقاس",
+     "value": "26 × 16 mm"
+    },
+    {
+     "key": "core",
+     "label": "Core",
+     "labelAr": "قطر اللب",
+     "value": "38–40 mm"
+    },
+    {
+     "key": "perCarton",
+     "label": "Per carton",
+     "labelAr": "الكمية في الكرتون",
+     "value": "36 rolls"
+    },
+    {
+     "key": "perRoll",
+     "label": "Labels per Roll",
+     "labelAr": "عدد الملصقات في الرول",
+     "value": "1000"
+    }
+   ],
+   "images": [
+    "/products/281-1.jpg",
+    "/products/281-2.jpg",
+    "/products/281-3.jpg"
+   ],
+   "duplicateSku": false
+  },
+  {
+   "id": 54,
+   "slug": "dsw2616-white-date-label-26x16mm-two-line-54",
+   "sku": "DSTW2616",
+   "odooName": "White Date Label 26x16mm -Two Line",
+   "name": "Date label, two lines — White 26 × 16 mm",
+   "nameAr": "ملصق تاريخ بسطرين — أبيض 26 × 16 مم",
+   "category": "thermal-label-rolls-8",
+   "subcategory": "thermal-label-rolls-date-price-labels-21",
+   "industries": [
+    "restaurants-26",
+    "retail-27"
+   ],
+   "specs": [
+    {
+     "key": "type",
+     "label": "Type",
+     "labelAr": "النوع",
+     "value": "Adhesive Label"
+    },
+    {
+     "key": "size",
+     "label": "Size",
+     "labelAr": "المقاس",
+     "value": "26 × 16 mm"
+    },
+    {
+     "key": "color",
+     "label": "Color",
+     "labelAr": "اللون",
+     "value": "White"
+    },
+    {
+     "key": "lines",
+     "label": "Lines",
+     "labelAr": "الأسطر",
+     "value": "2 Lines"
+    },
+    {
+     "key": "core",
+     "label": "Core",
+     "labelAr": "قطر اللب",
+     "value": "38–40 mm"
+    },
+    {
+     "key": "perRoll",
+     "label": "Labels per Roll",
+     "labelAr": "عدد الملصقات في الرول",
+     "value": "1000"
+    },
+    {
+     "key": "perCarton",
+     "label": "Per carton",
+     "labelAr": "الكمية في الكرتون",
+     "value": "36 Rolls"
+    },
+    {
+     "key": "material",
+     "label": "Material",
+     "labelAr": "الخامة",
+     "value": "Non-Heatable"
+    }
+   ],
+   "images": [
+    "/products/54-1.jpg",
+    "/products/54-2.jpg",
+    "/products/54-3.jpg"
+   ],
+   "duplicateSku": false
+  },
+  {
+   "id": 282,
+   "slug": "dsy2616-yellow-date-sticker-26-16mm-two-line-non-thermal-282",
+   "sku": "DSY2616",
+   "odooName": "Yellow Date Sticker 26-16mm two-line-non-thermal",
+   "name": "Date label, two lines — Yellow 26 × 16 mm",
+   "nameAr": "ملصق تاريخ بسطرين — أصفر 26 × 16 مم",
+   "category": "thermal-label-rolls-8",
+   "subcategory": "thermal-label-rolls-date-price-labels-21",
+   "industries": [
+    "restaurants-26",
+    "retail-27"
+   ],
+   "specs": [
+    {
+     "key": "type",
+     "label": "Type",
+     "labelAr": "النوع",
+     "value": "Adhesive Label"
+    },
+    {
+     "key": "size",
+     "label": "Size",
+     "labelAr": "المقاس",
+     "value": "26 × 16 mm"
+    },
+    {
+     "key": "core",
+     "label": "Core",
+     "labelAr": "قطر اللب",
+     "value": "38–40 mm"
+    },
+    {
+     "key": "perCarton",
+     "label": "Per carton",
+     "labelAr": "الكمية في الكرتون",
+     "value": "36 rolls"
+    },
+    {
+     "key": "perRoll",
+     "label": "Labels per Roll",
+     "labelAr": "عدد الملصقات في الرول",
+     "value": "1000"
+    }
+   ],
+   "images": [
+    "/products/282-1.jpg",
+    "/products/282-2.jpg",
+    "/products/282-3.jpg"
+   ],
+   "duplicateSku": false
+  },
+  {
+   "id": 71,
+   "slug": "evt100300-event-badge-100x300mm-name-label-71",
+   "sku": "TL100300",
+   "odooName": "Event Badge 100x300mm - Name Label",
+   "name": "Event badge name label 100 × 300 mm",
+   "nameAr": "بطاقة اسم للفعاليات 100 × 300 مم",
+   "category": "event-badge-14",
+   "subcategory": null,
+   "industries": [
+    "retail-27"
+   ],
+   "specs": [
+    {
+     "key": "type",
+     "label": "Type",
+     "labelAr": "النوع",
+     "value": "Non-Thermal Label"
+    },
+    {
+     "key": "size",
+     "label": "Size",
+     "labelAr": "المقاس",
+     "value": "100 × 300 mm"
+    },
+    {
+     "key": "core",
+     "label": "Core",
+     "labelAr": "قطر اللب",
+     "value": "No Core"
+    },
+    {
+     "key": "perCarton",
+     "label": "Per carton",
+     "labelAr": "الكمية في الكرتون",
+     "value": "10 boxes"
+    },
+    {
+     "key": "perRoll",
+     "label": "Labels per Roll",
+     "labelAr": "عدد الملصقات في الرول",
+     "value": "500"
+    }
+   ],
+   "images": [
+    "/products/71-1.jpg",
+    "/products/71-2.jpg",
+    "/products/71-3.jpg"
+   ],
+   "duplicateSku": false
+  },
+  {
+   "id": 81,
+   "slug": "gds2616-italian-two-line-date-labeler-81",
+   "sku": "GDS2616",
+   "odooName": "Italian Two-Line Date labeler",
+   "name": "Italian two-line date labeler",
+   "nameAr": "آلة تاريخ إيطالية بسطرين",
+   "category": "labelers-23",
+   "subcategory": "labelers-italian-two-line-date-labeler-24",
+   "industries": [
+    "restaurants-26",
+    "retail-27"
+   ],
+   "specs": [
+    {
+     "key": "type",
+     "label": "Type",
+     "labelAr": "النوع",
+     "value": "Digital date labeling gun"
+    },
+    {
+     "key": "origin",
+     "label": "Origin",
+     "labelAr": "بلد المنشأ",
+     "value": "Made in Italy"
+    },
+    {
+     "key": "usage",
+     "label": "Usage",
+     "labelAr": "الاستخدام",
+     "value": "Printing dates & batch codes"
+    },
+    {
+     "key": "compatibility",
+     "label": "Compatibility",
+     "labelAr": "التوافق",
+     "value": "Two-line date stickers"
+    }
+   ],
+   "images": [
+    "/products/81-1.jpg",
+    "/products/81-2.jpg"
+   ],
+   "duplicateSku": false
+  },
+  {
+   "id": 84,
+   "slug": "glov5050-one-use-gloves-84",
+   "sku": "GLV55",
+   "odooName": "One Use Gloves",
+   "name": "One-use gloves",
+   "nameAr": "قفازات للاستخدام مرة واحدة",
+   "category": "one-use-gloves-11",
+   "subcategory": null,
+   "industries": [
+    "logistics-30"
+   ],
+   "specs": [
+    {
+     "key": "type",
+     "label": "Type",
+     "labelAr": "النوع",
+     "value": "Disposable clear gloves"
+    },
+    {
+     "key": "usage",
+     "label": "Usage",
+     "labelAr": "الاستخدام",
+     "value": "Hygiene & food handling"
+    },
+    {
+     "key": "features",
+     "label": "Features",
+     "labelAr": "المزايا",
+     "value": "Lightweight, easy to use"
+    },
+    {
+     "key": "perBag",
+     "label": "Quantity per bag",
+     "labelAr": "الكمية في الكيس",
+     "value": "40 packets"
+    }
+   ],
+   "images": [
+    "/products/84-1.jpg",
+    "/products/84-2.jpg"
+   ],
+   "duplicateSku": false
+  },
+  {
+   "id": 82,
+   "slug": "gpl2112-italian-one-line-price-labeler-82",
+   "sku": "GPL2112",
+   "odooName": "Italian One-Line Price labeler",
+   "name": "Italian one-line price labeler",
+   "nameAr": "آلة تسعير إيطالية بسطر واحد",
+   "category": "labelers-23",
+   "subcategory": "labelers-italian-one-line-date-labeler-25",
+   "industries": [
+    "retail-27"
+   ],
+   "specs": [
+    {
+     "key": "type",
+     "label": "Type",
+     "labelAr": "النوع",
+     "value": "Digital price labeling gun"
+    },
+    {
+     "key": "origin",
+     "label": "Origin",
+     "labelAr": "بلد المنشأ",
+     "value": "Made in Italy"
+    },
+    {
+     "key": "usage",
+     "label": "Usage",
+     "labelAr": "الاستخدام",
+     "value": "Printing prices & batch codes"
+    },
+    {
+     "key": "compatibility",
+     "label": "Compatibility",
+     "labelAr": "التوافق",
+     "value": "One-line date / price stickers"
+    }
+   ],
+   "images": [
+    "/products/82-1.jpg",
+    "/products/82-2.jpg"
+   ],
+   "duplicateSku": false
+  },
+  {
+   "id": 83,
+   "slug": "ink2616-ink-for-date-gun-italian-83",
+   "sku": "INK2616",
+   "odooName": "Ink for Date Gun - Italian",
+   "name": "Ink roller for Italian date labeler",
+   "nameAr": "حبر لآلة التاريخ الإيطالية",
+   "category": "labelers-23",
+   "subcategory": null,
+   "industries": [
+    "restaurants-26",
+    "retail-27"
+   ],
+   "specs": [
+    {
+     "key": "type",
+     "label": "Type",
+     "labelAr": "النوع",
+     "value": "Date Gun Ink Cartridge"
+    },
+    {
+     "key": "compatibility",
+     "label": "Compatibility",
+     "labelAr": "التوافق",
+     "value": "Italian two-line date guns"
+    },
+    {
+     "key": "color",
+     "label": "Color",
+     "labelAr": "اللون",
+     "value": "Deep black for high-contrast marking"
+    },
+    {
+     "key": "performance",
+     "label": "Performance",
+     "labelAr": "الأداء",
+     "value": "Quick-dry, long-lasting, smudge-resistant"
+    }
+   ],
+   "images": [
+    "/products/83-1.jpg",
+    "/products/83-2.jpg"
+   ],
+   "duplicateSku": false
+  },
+  {
+   "id": 55,
+   "slug": "pl2112-price-label-21x12mm-one-line-non-thermal-55",
+   "sku": "PL2112",
+   "odooName": "Price Label 21x12mm - One Line - Non Thermal",
+   "name": "Price label, one line 21 × 12 mm",
+   "nameAr": "ملصق سعر بسطر واحد 21 × 12 مم",
+   "category": "thermal-label-rolls-8",
+   "subcategory": "thermal-label-rolls-date-price-labels-21",
+   "industries": [
+    "restaurants-26",
+    "retail-27"
+   ],
+   "specs": [
+    {
+     "key": "type",
+     "label": "Type",
+     "labelAr": "النوع",
+     "value": "Adhesive Label"
+    },
+    {
+     "key": "size",
+     "label": "Size",
+     "labelAr": "المقاس",
+     "value": "21 × 12 mm"
+    },
+    {
+     "key": "core",
+     "label": "Core",
+     "labelAr": "قطر اللب",
+     "value": "38–40 mm"
+    },
+    {
+     "key": "perCarton",
+     "label": "Per carton",
+     "labelAr": "الكمية في الكرتون",
+     "value": "48 rolls"
+    },
+    {
+     "key": "perRoll",
+     "label": "Labels per Roll",
+     "labelAr": "عدد الملصقات في الرول",
+     "value": "1000"
+    }
+   ],
+   "images": [
+    "/products/55-1.jpg",
+    "/products/55-2.jpg"
+   ],
+   "duplicateSku": false
+  },
+  {
+   "id": 75,
+   "slug": "r110450pw-wax-ribbon-110x450mm-75",
+   "sku": "R110450PW",
+   "odooName": "Wax Ribbon 110x450mm",
+   "name": "Wax ribbon 110 mm × 450 m",
+   "nameAr": "شريط واكس 110 مم × 450 م",
+   "category": "thermal-ribbon-12",
+   "subcategory": null,
+   "industries": [
+    "logistics-30",
+    "retail-27"
+   ],
+   "specs": [
+    {
+     "key": "type",
+     "label": "Type",
+     "labelAr": "النوع",
+     "value": "Wax Ribbon"
+    },
+    {
+     "key": "size",
+     "label": "Size",
+     "labelAr": "المقاس",
+     "value": "110 mm × 450 m"
+    },
+    {
+     "key": "core",
+     "label": "Core",
+     "labelAr": "قطر اللب",
+     "value": "1 Inch"
+    },
+    {
+     "key": "perCarton",
+     "label": "Per carton",
+     "labelAr": "الكمية في الكرتون",
+     "value": "16 rolls"
+    },
+    {
+     "key": "inkFace",
+     "label": "Ink Face",
+     "labelAr": "وجه الحبر",
+     "value": "Side Out"
+    }
+   ],
+   "images": [
+    "/products/75-1.png",
+    "/products/75-2.png"
+   ],
+   "duplicateSku": false
+  },
+  {
+   "id": 72,
+   "slug": "r11074pw-wax-ribbon-110x74mm-72",
+   "sku": "R11074PW",
+   "odooName": "Wax Ribbon 110x74mm",
+   "name": "Wax ribbon 110 mm × 74 m",
+   "nameAr": "شريط واكس 110 مم × 74 م",
+   "category": "thermal-ribbon-12",
+   "subcategory": null,
+   "industries": [
+    "logistics-30"
+   ],
+   "specs": [
+    {
+     "key": "type",
+     "label": "Type",
+     "labelAr": "النوع",
+     "value": "Wax Ribbon"
+    },
+    {
+     "key": "size",
+     "label": "Size",
+     "labelAr": "المقاس",
+     "value": "110 mm × 74 m"
+    },
+    {
+     "key": "core",
+     "label": "Core",
+     "labelAr": "قطر اللب",
+     "value": "0.5 Inch"
+    },
+    {
+     "key": "perCarton",
+     "label": "Per carton",
+     "labelAr": "الكمية في الكرتون",
+     "value": "36 rolls"
+    },
+    {
+     "key": "inkFace",
+     "label": "Ink Face",
+     "labelAr": "وجه الحبر",
+     "value": "Side Out"
+    }
+   ],
+   "images": [
+    "/products/72-1.png",
+    "/products/72-2.png"
+   ],
+   "duplicateSku": false
+  },
+  {
+   "id": 73,
+   "slug": "rib-15050-wax-ribbon-50x150mm-73",
+   "sku": "R50150PW",
+   "odooName": "Wax Ribbon 50x150mm",
+   "name": "Wax ribbon 50 mm × 150 m",
+   "nameAr": "شريط واكس 50 مم × 150 م",
+   "category": "thermal-ribbon-12",
+   "subcategory": null,
+   "industries": [
+    "logistics-30",
+    "retail-27"
+   ],
+   "specs": [
+    {
+     "key": "type",
+     "label": "Type",
+     "labelAr": "النوع",
+     "value": "Wax Ribbon"
+    },
+    {
+     "key": "size",
+     "label": "Size",
+     "labelAr": "المقاس",
+     "value": "50 mm × 150 m"
+    },
+    {
+     "key": "core",
+     "label": "Core",
+     "labelAr": "قطر اللب",
+     "value": "1 Inch"
+    },
+    {
+     "key": "perCarton",
+     "label": "Per carton",
+     "labelAr": "الكمية في الكرتون",
+     "value": "48 rolls"
+    },
+    {
+     "key": "inkFace",
+     "label": "Ink Face",
+     "labelAr": "وجه الحبر",
+     "value": "Side Out"
+    }
+   ],
+   "images": [
+    "/products/73-1.png",
+    "/products/73-2.png"
+   ],
+   "duplicateSku": false
+  },
+  {
+   "id": 77,
+   "slug": "rib-30060-thermal-wax-ribbon-60x300mm-77",
+   "sku": "R60300PW",
+   "odooName": "Thermal Wax Ribbon 60x300mm",
+   "name": "Wax ribbon 60 mm × 300 m",
+   "nameAr": "شريط واكس 60 مم × 300 م",
+   "category": "thermal-ribbon-12",
+   "subcategory": null,
+   "industries": [
+    "healthcare-31",
+    "logistics-30",
+    "retail-27"
+   ],
+   "specs": [
+    {
+     "key": "type",
+     "label": "Type",
+     "labelAr": "النوع",
+     "value": "Wax Ribbon"
+    },
+    {
+     "key": "size",
+     "label": "Size",
+     "labelAr": "المقاس",
+     "value": "60 mm × 300 m"
+    },
+    {
+     "key": "core",
+     "label": "Core",
+     "labelAr": "قطر اللب",
+     "value": "1 Inch"
+    },
+    {
+     "key": "inkFace",
+     "label": "Ink Face",
+     "labelAr": "وجه الحبر",
+     "value": "Side Out"
+    },
+    {
+     "key": "perCarton",
+     "label": "Per carton",
+     "labelAr": "الكمية في الكرتون",
+     "value": "16 Rolls"
+    }
+   ],
+   "images": [
+    "/products/77-1.png",
+    "/products/77-2.png"
+   ],
+   "duplicateSku": true
+  },
+  {
+   "id": 79,
+   "slug": "rib-30900-wax-ribbon-30x900mm-79",
+   "sku": "R30900PW",
+   "odooName": "Wax Ribbon 30x900mm",
+   "name": "Wax ribbon 30 mm × 900 m",
+   "nameAr": "شريط واكس 30 مم × 900 م",
+   "category": "thermal-ribbon-12",
+   "subcategory": null,
+   "industries": [
+    "restaurants-26",
+    "retail-27"
+   ],
+   "specs": [
+    {
+     "key": "type",
+     "label": "Type",
+     "labelAr": "النوع",
+     "value": "Wax Ribbon"
+    },
+    {
+     "key": "size",
+     "label": "Size",
+     "labelAr": "المقاس",
+     "value": "30 mm × 900 m"
+    },
+    {
+     "key": "core",
+     "label": "Core",
+     "labelAr": "قطر اللب",
+     "value": "1 Inch"
+    },
+    {
+     "key": "perCarton",
+     "label": "Per carton",
+     "labelAr": "الكمية في الكرتون",
+     "value": "20 rolls"
+    },
+    {
+     "key": "inkFace",
+     "label": "Ink Face",
+     "labelAr": "وجه الحبر",
+     "value": "Side Out"
+    }
+   ],
+   "images": [
+    "/products/79-1.png",
+    "/products/79-2.png"
+   ],
+   "duplicateSku": false
+  },
+  {
+   "id": 80,
+   "slug": "rib-40450-ribbon-40x450mm-80",
+   "sku": "R40450PW",
+   "odooName": "Ribbon 40x450mm",
+   "name": "Wax ribbon 40 mm × 450 m",
+   "nameAr": "شريط واكس 40 مم × 450 م",
+   "category": "thermal-ribbon-12",
+   "subcategory": null,
+   "industries": [
+    "retail-27"
+   ],
+   "specs": [
+    {
+     "key": "type",
+     "label": "Type",
+     "labelAr": "النوع",
+     "value": "Wax Ribbon"
+    },
+    {
+     "key": "size",
+     "label": "Size",
+     "labelAr": "المقاس",
+     "value": "40 mm × 450 m"
+    },
+    {
+     "key": "core",
+     "label": "Core",
+     "labelAr": "قطر اللب",
+     "value": "1 Inch"
+    },
+    {
+     "key": "perCarton",
+     "label": "Per carton",
+     "labelAr": "الكمية في الكرتون",
+     "value": "24 rolls"
+    },
+    {
+     "key": "inkFace",
+     "label": "Ink Face",
+     "labelAr": "وجه الحبر",
+     "value": "Side Out"
+    }
+   ],
+   "images": [
+    "/products/80-1.png",
+    "/products/80-2.png"
+   ],
+   "duplicateSku": false
+  },
+  {
+   "id": 272,
+   "slug": "rib-60300-wax-resin-ribbon-60300-mm-out-272",
+   "sku": "R60300PW",
+   "odooName": "Wax/Resin Ribbon 60×300 mm / Out",
+   "name": "Wax/resin ribbon, ink out 60 mm × 300 m",
+   "nameAr": "شريط واكس/ريزن، الحبر للخارج 60 مم × 300 م",
+   "category": "thermal-ribbon-12",
+   "subcategory": null,
+   "industries": [
+    "logistics-30"
+   ],
+   "specs": [
+    {
+     "key": "type",
+     "label": "Type",
+     "labelAr": "النوع",
+     "value": "Wax Ribbon"
+    },
+    {
+     "key": "size",
+     "label": "Size",
+     "labelAr": "المقاس",
+     "value": "60 mm × 300 m"
+    },
+    {
+     "key": "core",
+     "label": "Core",
+     "labelAr": "قطر اللب",
+     "value": "1 Inch"
+    },
+    {
+     "key": "inkFace",
+     "label": "Ink Face",
+     "labelAr": "وجه الحبر",
+     "value": "Side Out"
+    },
+    {
+     "key": "perCarton",
+     "label": "Per carton",
+     "labelAr": "الكمية في الكرتون",
+     "value": "16 Rolls"
+    }
+   ],
+   "images": [
+    "/products/272-1.png",
+    "/products/272-2.png"
+   ],
+   "duplicateSku": true
+  },
+  {
+   "id": 78,
+   "slug": "rib-60450-wax-ribbon-60x450mm-78",
+   "sku": "R60450PW",
+   "odooName": "Wax Ribbon 60x450mm",
+   "name": "Wax ribbon 60 mm × 450 m",
+   "nameAr": "شريط واكس 60 مم × 450 م",
+   "category": "thermal-ribbon-12",
+   "subcategory": null,
+   "industries": [
+    "healthcare-31",
+    "logistics-30",
+    "retail-27"
+   ],
+   "specs": [
+    {
+     "key": "type",
+     "label": "Type",
+     "labelAr": "النوع",
+     "value": "Wax Ribbon"
+    },
+    {
+     "key": "size",
+     "label": "Size",
+     "labelAr": "المقاس",
+     "value": "60 mm × 450 m"
+    },
+    {
+     "key": "core",
+     "label": "Core",
+     "labelAr": "قطر اللب",
+     "value": "1 Inch"
+    },
+    {
+     "key": "perCarton",
+     "label": "Per carton",
+     "labelAr": "الكمية في الكرتون",
+     "value": "16 rolls"
+    },
+    {
+     "key": "inkFace",
+     "label": "Ink Face",
+     "labelAr": "وجه الحبر",
+     "value": "Side Out"
+    }
+   ],
+   "images": [
+    "/products/78-1.png",
+    "/products/78-2.png"
+   ],
+   "duplicateSku": false
+  },
+  {
+   "id": 76,
+   "slug": "rib-6474-wax-ribbon-64x74mm-76",
+   "sku": "R6474PW",
+   "odooName": "Wax Ribbon 64x74mm",
+   "name": "Wax ribbon 64 mm × 74 m",
+   "nameAr": "شريط واكس 64 مم × 74 م",
+   "category": "thermal-ribbon-12",
+   "subcategory": null,
+   "industries": [
+    "logistics-30",
+    "retail-27"
+   ],
+   "specs": [
+    {
+     "key": "type",
+     "label": "Type",
+     "labelAr": "النوع",
+     "value": "Wax Ribbon"
+    },
+    {
+     "key": "size",
+     "label": "Size",
+     "labelAr": "المقاس",
+     "value": "64 mm × 74 m"
+    },
+    {
+     "key": "core",
+     "label": "Core",
+     "labelAr": "قطر اللب",
+     "value": "0.5 Inch"
+    },
+    {
+     "key": "perCarton",
+     "label": "Per carton",
+     "labelAr": "الكمية في الكرتون",
+     "value": "36 rolls"
+    },
+    {
+     "key": "inkFace",
+     "label": "Ink Face",
+     "labelAr": "وجه الحبر",
+     "value": "Side Out"
+    }
+   ],
+   "images": [
+    "/products/76-1.png",
+    "/products/76-2.png"
+   ],
+   "duplicateSku": false
+  },
+  {
+   "id": 74,
+   "slug": "rib-65450-wax-ribbon-65x450mm-74",
+   "sku": "R65450PW",
+   "odooName": "Wax Ribbon 65x450mm",
+   "name": "Wax ribbon 65 mm × 450 m",
+   "nameAr": "شريط واكس 65 مم × 450 م",
+   "category": "thermal-ribbon-12",
+   "subcategory": null,
+   "industries": [
+    "healthcare-31",
+    "retail-27"
+   ],
+   "specs": [
+    {
+     "key": "type",
+     "label": "Type",
+     "labelAr": "النوع",
+     "value": "Wax Ribbon"
+    },
+    {
+     "key": "size",
+     "label": "Size",
+     "labelAr": "المقاس",
+     "value": "65 mm × 450 m"
+    },
+    {
+     "key": "core",
+     "label": "Core",
+     "labelAr": "قطر اللب",
+     "value": "1 Inch"
+    },
+    {
+     "key": "inkFace",
+     "label": "Ink Face",
+     "labelAr": "وجه الحبر",
+     "value": "Side Out"
+    },
+    {
+     "key": "perCarton",
+     "label": "Per carton",
+     "labelAr": "الكمية في الكرتون",
+     "value": "16 Rolls"
+    }
+   ],
+   "images": [
+    "/products/74-1.png",
+    "/products/74-2.png"
+   ],
+   "duplicateSku": false
+  },
+  {
+   "id": 52,
+   "slug": "thr-10052-handheld-thermal-roll-100x52mm-52",
+   "sku": "TR1005255",
+   "odooName": "Handheld Thermal Roll 100x52mm",
+   "name": "Handheld thermal roll 100 × 52 mm",
+   "nameAr": "رول حراري للأجهزة المحمولة 100 × 52 مم",
+   "category": "thermal-paper-rolls-13",
+   "subcategory": "thermal-paper-rolls-handheld-roll-19",
+   "industries": [
+    "logistics-30",
+    "retail-27"
+   ],
+   "specs": [
+    {
+     "key": "type",
+     "label": "Type",
+     "labelAr": "النوع",
+     "value": "Thermal Handheld Roll"
+    },
+    {
+     "key": "size",
+     "label": "Size",
+     "labelAr": "المقاس",
+     "value": "100 × 52 mm"
+    },
+    {
+     "key": "core",
+     "label": "Core",
+     "labelAr": "قطر اللب",
+     "value": "24–26 mm"
+    },
+    {
+     "key": "perCarton",
+     "label": "Per carton",
+     "labelAr": "الكمية في الكرتون",
+     "value": "50 rolls"
+    },
+    {
+     "key": "weight",
+     "label": "Weight",
+     "labelAr": "الوزن",
+     "value": "55 GSM"
+    }
+   ],
+   "images": [
+    "/products/52-1.png",
+    "/products/52-2.png"
+   ],
+   "duplicateSku": false
+  },
+  {
+   "id": 51,
+   "slug": "thr-11050-handheld-thermal-roll-110x50mm-51",
+   "sku": "TR1105055",
+   "odooName": "Handheld Thermal Roll 110x50mm",
+   "name": "Handheld thermal roll 110 × 50 mm",
+   "nameAr": "رول حراري للأجهزة المحمولة 110 × 50 مم",
+   "category": "thermal-paper-rolls-13",
+   "subcategory": "thermal-paper-rolls-handheld-roll-19",
+   "industries": [
+    "logistics-30",
+    "restaurants-26"
+   ],
+   "specs": [
+    {
+     "key": "type",
+     "label": "Type",
+     "labelAr": "النوع",
+     "value": "Thermal Handheld Roll"
+    },
+    {
+     "key": "size",
+     "label": "Size",
+     "labelAr": "المقاس",
+     "value": "110 × 50 mm"
+    },
+    {
+     "key": "core",
+     "label": "Core",
+     "labelAr": "قطر اللب",
+     "value": "24–26 mm"
+    },
+    {
+     "key": "perCarton",
+     "label": "Per carton",
+     "labelAr": "الكمية في الكرتون",
+     "value": "50 rolls"
+    },
+    {
+     "key": "weight",
+     "label": "Weight",
+     "labelAr": "الوزن",
+     "value": "55 GSM"
+    }
+   ],
+   "images": [
+    "/products/51-1.png",
+    "/products/51-2.png"
+   ],
+   "duplicateSku": false
+  },
+  {
+   "id": 68,
+   "slug": "tl100100-non-thermal-label-100x100mm-paper-1000-pcs-roll-68",
+   "sku": "TL100100",
+   "odooName": "Non-Thermal Label 100x100mm - Paper - 1000 pcs/roll",
+   "name": "Paper label (non-thermal) 100 × 100 mm",
+   "nameAr": "ملصق ورقي (غير حراري) 100 × 100 مم",
+   "category": "thermal-label-rolls-8",
+   "subcategory": "thermal-label-rolls-thermal-labels-20",
+   "industries": [
+    "logistics-30",
+    "retail-27"
+   ],
+   "specs": [
+    {
+     "key": "type",
+     "label": "Type",
+     "labelAr": "النوع",
+     "value": "Adhesive Label"
+    },
+    {
+     "key": "size",
+     "label": "Size",
+     "labelAr": "المقاس",
+     "value": "100 × 100 mm"
+    },
+    {
+     "key": "core",
+     "label": "Core",
+     "labelAr": "قطر اللب",
+     "value": "75–85 mm"
+    },
+    {
+     "key": "perCarton",
+     "label": "Per carton",
+     "labelAr": "الكمية في الكرتون",
+     "value": "12 rolls"
+    },
+    {
+     "key": "perRoll",
+     "label": "Labels per Roll",
+     "labelAr": "عدد الملصقات في الرول",
+     "value": "1000"
+    }
+   ],
+   "images": [
+    "/products/68-1.jpg",
+    "/products/68-2.jpg"
+   ],
+   "duplicateSku": false
+  },
+  {
+   "id": 63,
+   "slug": "tl100150-thermal-sticker-100x150mm-500-pcs-roll-63",
+   "sku": "TL100150",
+   "odooName": "Thermal Sticker 100x150mm - 500 pcs/roll",
+   "name": "Thermal label 100 × 150 mm",
+   "nameAr": "ملصق حراري 100 × 150 مم",
+   "category": "thermal-label-rolls-8",
+   "subcategory": "thermal-label-rolls-thermal-labels-20",
+   "industries": [
+    "logistics-30",
+    "retail-27"
+   ],
+   "specs": [
+    {
+     "key": "size",
+     "label": "Size",
+     "labelAr": "المقاس",
+     "value": "100 × 150 mm"
+    },
+    {
+     "key": "perCarton",
+     "label": "Per carton",
+     "labelAr": "الكمية في الكرتون",
+     "value": "12 rolls"
+    },
+    {
+     "key": "perRoll",
+     "label": "Labels per Roll",
+     "labelAr": "عدد الملصقات في الرول",
+     "value": "500"
+    }
+   ],
+   "images": [
+    "/products/63-1.jpg",
+    "/products/63-2.jpg"
+   ],
+   "duplicateSku": false
+  },
+  {
+   "id": 61,
+   "slug": "tl10050-thermal-label-100x50mm-1000-pcs-roll-61",
+   "sku": "TL10050",
+   "odooName": "Thermal Label 100x50mm - 1000 pcs/roll",
+   "name": "Thermal label 100 × 50 mm",
+   "nameAr": "ملصق حراري 100 × 50 مم",
+   "category": "thermal-label-rolls-8",
+   "subcategory": "thermal-label-rolls-thermal-labels-20",
+   "industries": [
+    "logistics-30",
+    "restaurants-26",
+    "retail-27"
+   ],
+   "specs": [
+    {
+     "key": "size",
+     "label": "Size",
+     "labelAr": "المقاس",
+     "value": "100 × 50 mm"
+    },
+    {
+     "key": "perCarton",
+     "label": "Per carton",
+     "labelAr": "الكمية في الكرتون",
+     "value": "24 rolls"
+    },
+    {
+     "key": "perRoll",
+     "label": "Labels per Roll",
+     "labelAr": "عدد الملصقات في الرول",
+     "value": "1000"
+    }
+   ],
+   "images": [
+    "/products/61-1.jpg",
+    "/products/61-2.jpg"
+   ],
+   "duplicateSku": false
+  },
+  {
+   "id": 62,
+   "slug": "tl10075-thermal-label-100x75mm-1000-pcs-roll-62",
+   "sku": "TL10075",
+   "odooName": "Thermal Label 100x75mm - 1000 pcs/roll",
+   "name": "Thermal label 100 × 75 mm",
+   "nameAr": "ملصق حراري 100 × 75 مم",
+   "category": "thermal-label-rolls-8",
+   "subcategory": "thermal-label-rolls-thermal-labels-20",
+   "industries": [
+    "logistics-30"
+   ],
+   "specs": [
+    {
+     "key": "size",
+     "label": "Size",
+     "labelAr": "المقاس",
+     "value": "100 × 75 mm"
+    },
+    {
+     "key": "perCarton",
+     "label": "Per carton",
+     "labelAr": "الكمية في الكرتون",
+     "value": "8 rolls"
+    },
+    {
+     "key": "perRoll",
+     "label": "Labels per Roll",
+     "labelAr": "عدد الملصقات في الرول",
+     "value": "1000"
+    }
+   ],
+   "images": [
+    "/products/62-1.jpg",
+    "/products/62-2.jpg"
+   ],
+   "duplicateSku": false
+  },
+  {
+   "id": 66,
+   "slug": "tl3225-thermal-label-25x32mm-5000-pcs-roll-66",
+   "sku": "TL5K2532",
+   "odooName": "Thermal Label 25x32mm - 5000 pcs/roll",
+   "name": "Thermal label 25 × 32 mm",
+   "nameAr": "ملصق حراري 25 × 32 مم",
+   "category": "thermal-label-rolls-8",
+   "subcategory": "thermal-label-rolls-thermal-labels-20",
+   "industries": [
+    "logistics-30",
+    "retail-27"
+   ],
+   "specs": [
+    {
+     "key": "size",
+     "label": "Size",
+     "labelAr": "المقاس",
+     "value": "25 × 32 mm"
+    },
+    {
+     "key": "perCarton",
+     "label": "Per carton",
+     "labelAr": "الكمية في الكرتون",
+     "value": "8 rolls"
+    },
+    {
+     "key": "perRoll",
+     "label": "Labels per Roll",
+     "labelAr": "عدد الملصقات في الرول",
+     "value": "15000"
+    }
+   ],
+   "images": [
+    "/products/66-1.jpg",
+    "/products/66-2.jpg"
+   ],
+   "duplicateSku": false
+  },
+  {
+   "id": 59,
+   "slug": "tl3828-thermal-label-38x28mm-2000-pcs-roll-59",
+   "sku": "TL3828",
+   "odooName": "Thermal Label 38x28mm - 2000 pcs/roll",
+   "name": "Thermal label 38 × 28 mm",
+   "nameAr": "ملصق حراري 38 × 28 مم",
+   "category": "thermal-label-rolls-8",
+   "subcategory": "thermal-label-rolls-thermal-labels-20",
+   "industries": [
+    "logistics-30",
+    "retail-27"
+   ],
+   "specs": [
+    {
+     "key": "size",
+     "label": "Size",
+     "labelAr": "المقاس",
+     "value": "38 × 28 mm"
+    },
+    {
+     "key": "perCarton",
+     "label": "Per carton",
+     "labelAr": "الكمية في الكرتون",
+     "value": "24 rolls"
+    },
+    {
+     "key": "perRoll",
+     "label": "Labels per Roll",
+     "labelAr": "عدد الملصقات في الرول",
+     "value": "2000"
+    }
+   ],
+   "images": [
+    "/products/59-1.jpg",
+    "/products/59-2.jpg"
+   ],
+   "duplicateSku": false
+  },
+  {
+   "id": 58,
+   "slug": "tl4022-thermal-label-40x22mm-2000-pcs-roll-58",
+   "sku": "TL4022",
+   "odooName": "Thermal Label 40x22mm - 2000 pcs/roll",
+   "name": "Thermal label 40 × 22 mm",
+   "nameAr": "ملصق حراري 40 × 22 مم",
+   "category": "thermal-label-rolls-8",
+   "subcategory": "thermal-label-rolls-thermal-labels-20",
+   "industries": [
+    "retail-27"
+   ],
+   "specs": [
+    {
+     "key": "size",
+     "label": "Size",
+     "labelAr": "المقاس",
+     "value": "40 × 22 mm"
+    },
+    {
+     "key": "perCarton",
+     "label": "Per carton",
+     "labelAr": "الكمية في الكرتون",
+     "value": "24 rolls"
+    },
+    {
+     "key": "perRoll",
+     "label": "Labels per Roll",
+     "labelAr": "عدد الملصقات في الرول",
+     "value": "2000"
+    }
+   ],
+   "images": [
+    "/products/58-1.jpg",
+    "/products/58-2.jpg"
+   ],
+   "duplicateSku": false
+  },
+  {
+   "id": 67,
+   "slug": "tl5025-5k-thermal-label-50x25mm-5000-pcs-roll-67",
+   "sku": "TL5K5025",
+   "odooName": "Thermal Label 50x25mm - 5000 pcs/roll",
+   "name": "Thermal label 50 × 25 mm",
+   "nameAr": "ملصق حراري 50 × 25 مم",
+   "category": "thermal-label-rolls-8",
+   "subcategory": "thermal-label-rolls-thermal-labels-20",
+   "industries": [
+    "logistics-30",
+    "retail-27"
+   ],
+   "specs": [
+    {
+     "key": "size",
+     "label": "Size",
+     "labelAr": "المقاس",
+     "value": "50 × 25 mm"
+    },
+    {
+     "key": "perCarton",
+     "label": "Per carton",
+     "labelAr": "الكمية في الكرتون",
+     "value": "8 rolls"
+    },
+    {
+     "key": "perRoll",
+     "label": "Labels per Roll",
+     "labelAr": "عدد الملصقات في الرول",
+     "value": "5000"
+    }
+   ],
+   "images": [
+    "/products/67-1.jpg",
+    "/products/67-2.jpg"
+   ],
+   "duplicateSku": false
+  },
+  {
+   "id": 57,
+   "slug": "tl5025-thermal-sticker-50x25mm-2000-pcs-roll-57",
+   "sku": "TL5025",
+   "odooName": "Thermal Sticker 50x25mm - 2000 pcs/roll",
+   "name": "Thermal label 50 × 25 mm",
+   "nameAr": "ملصق حراري 50 × 25 مم",
+   "category": "thermal-label-rolls-8",
+   "subcategory": "thermal-label-rolls-thermal-labels-20",
+   "industries": [
+    "logistics-30",
+    "retail-27"
+   ],
+   "specs": [
+    {
+     "key": "size",
+     "label": "Size",
+     "labelAr": "المقاس",
+     "value": "50 × 25 mm"
+    },
+    {
+     "key": "perCarton",
+     "label": "Per carton",
+     "labelAr": "الكمية في الكرتون",
+     "value": "24 rolls"
+    },
+    {
+     "key": "perRoll",
+     "label": "Labels per Roll",
+     "labelAr": "عدد الملصقات في الرول",
+     "value": "2000"
+    }
+   ],
+   "images": [
+    "/products/57-1.jpg",
+    "/products/57-2.jpg"
+   ],
+   "duplicateSku": false
+  },
+  {
+   "id": 64,
+   "slug": "tl6030-thermal-label-60x30mm-1000-pcs-roll-64",
+   "sku": "TL6030",
+   "odooName": "Thermal Label 60x30mm - 1000 pcs/roll",
+   "name": "Thermal label 60 × 30 mm",
+   "nameAr": "ملصق حراري 60 × 30 مم",
+   "category": "thermal-label-rolls-8",
+   "subcategory": "thermal-label-rolls-thermal-labels-20",
+   "industries": [
+    "healthcare-31",
+    "restaurants-26"
+   ],
+   "specs": [
+    {
+     "key": "size",
+     "label": "Size",
+     "labelAr": "المقاس",
+     "value": "60 × 30 mm"
+    },
+    {
+     "key": "perCarton",
+     "label": "Per carton",
+     "labelAr": "الكمية في الكرتون",
+     "value": "36 rolls"
+    },
+    {
+     "key": "perRoll",
+     "label": "Labels per Roll",
+     "labelAr": "عدد الملصقات في الرول",
+     "value": "1000"
+    }
+   ],
+   "images": [
+    "/products/64-1.jpg",
+    "/products/64-2.jpg"
+   ],
+   "duplicateSku": false
+  },
+  {
+   "id": 56,
+   "slug": "tl6040-thermal-label-60x40mm-1000-pcs-roll-56",
+   "sku": "TL6040",
+   "odooName": "Thermal Label 60x40mm - 1000 pcs/roll",
+   "name": "Thermal label 60 × 40 mm",
+   "nameAr": "ملصق حراري 60 × 40 مم",
+   "category": "thermal-label-rolls-8",
+   "subcategory": "thermal-label-rolls-thermal-labels-20",
+   "industries": [
+    "restaurants-26",
+    "retail-27"
+   ],
+   "specs": [
+    {
+     "key": "size",
+     "label": "Size",
+     "labelAr": "المقاس",
+     "value": "60 × 40 mm"
+    },
+    {
+     "key": "perCarton",
+     "label": "Per carton",
+     "labelAr": "الكمية في الكرتون",
+     "value": "24 rolls"
+    },
+    {
+     "key": "perRoll",
+     "label": "Labels per Roll",
+     "labelAr": "عدد الملصقات في الرول",
+     "value": "1000"
+    }
+   ],
+   "images": [
+    "/products/56-1.jpg",
+    "/products/56-2.jpg"
+   ],
+   "duplicateSku": false
+  },
+  {
+   "id": 65,
+   "slug": "tl7030-thermal-label-70x30mm-1000-pcs-roll-65",
+   "sku": "TL7030",
+   "odooName": "Thermal Label 70x30mm - 1000 pcs/roll",
+   "name": "Thermal label 70 × 30 mm",
+   "nameAr": "ملصق حراري 70 × 30 مم",
+   "category": "thermal-label-rolls-8",
+   "subcategory": "thermal-label-rolls-thermal-labels-20",
+   "industries": [
+    "logistics-30",
+    "retail-27"
+   ],
+   "specs": [
+    {
+     "key": "size",
+     "label": "Size",
+     "labelAr": "المقاس",
+     "value": "70 × 30 mm"
+    },
+    {
+     "key": "perCarton",
+     "label": "Per carton",
+     "labelAr": "الكمية في الكرتون",
+     "value": "24 rolls"
+    },
+    {
+     "key": "perRoll",
+     "label": "Labels per Roll",
+     "labelAr": "عدد الملصقات في الرول",
+     "value": "1000"
+    }
+   ],
+   "images": [
+    "/products/65-1.jpg",
+    "/products/65-2.jpg"
+   ],
+   "duplicateSku": false
+  },
+  {
+   "id": 60,
+   "slug": "tl7550-thermal-sticker-75x50mm-1000-pcs-roll-60",
+   "sku": "TL7550",
+   "odooName": "Thermal Sticker 75x50mm - 1000 pcs/roll",
+   "name": "Thermal label 75 × 50 mm",
+   "nameAr": "ملصق حراري 75 × 50 مم",
+   "category": "thermal-label-rolls-8",
+   "subcategory": "thermal-label-rolls-thermal-labels-20",
+   "industries": [
+    "healthcare-31",
+    "restaurants-26"
+   ],
+   "specs": [
+    {
+     "key": "size",
+     "label": "Size",
+     "labelAr": "المقاس",
+     "value": "75 × 50 mm"
+    },
+    {
+     "key": "perCarton",
+     "label": "Per carton",
+     "labelAr": "الكمية في الكرتون",
+     "value": "24 rolls"
+    },
+    {
+     "key": "perRoll",
+     "label": "Labels per Roll",
+     "labelAr": "عدد الملصقات في الرول",
+     "value": "1000"
+    }
+   ],
+   "images": [
+    "/products/60-1.jpg",
+    "/products/60-2.jpg"
+   ],
+   "duplicateSku": false
+  },
+  {
+   "id": 69,
+   "slug": "tl80150-polypropylene-label-80x150mm-water-resistant-69",
+   "sku": "TL80150",
+   "odooName": "Polypropylene label 80x150mm - Water Resistant",
+   "name": "Polypropylene label, water-resistant 80 × 150 mm",
+   "nameAr": "ملصق بولي بروبيلين مقاوم للماء 80 × 150 مم",
+   "category": "thermal-label-rolls-8",
+   "subcategory": "thermal-label-rolls-polypropylene-labels-22",
+   "industries": [
+    "logistics-30"
+   ],
+   "specs": [
+    {
+     "key": "type",
+     "label": "Type",
+     "labelAr": "النوع",
+     "value": "Adhesive Label"
+    },
+    {
+     "key": "material",
+     "label": "Material",
+     "labelAr": "الخامة",
+     "value": "Polypropylene (Water Resistant)"
+    },
+    {
+     "key": "size",
+     "label": "Size",
+     "labelAr": "المقاس",
+     "value": "80 × 150 mm"
+    },
+    {
+     "key": "core",
+     "label": "Core",
+     "labelAr": "قطر اللب",
+     "value": "75–85 mm"
+    },
+    {
+     "key": "perRoll",
+     "label": "Labels per Roll",
+     "labelAr": "عدد الملصقات في الرول",
+     "value": "500"
+    },
+    {
+     "key": "perCarton",
+     "label": "Per carton",
+     "labelAr": "الكمية في الكرتون",
+     "value": "8 Rolls"
+    }
+   ],
+   "images": [
+    "/products/69-1.jpg",
+    "/products/69-2.jpg"
+   ],
+   "duplicateSku": false
+  },
+  {
+   "id": 48,
+   "slug": "tr574055-thermal-span-paper-roll-57x40mm-55gsm-48",
+   "sku": "TR574070",
+   "odooName": "Thermal Span paper Roll 57x40mm - 55GSM",
+   "name": "Thermal mada (span) roll 57 × 40 mm",
+   "nameAr": "رول مدى حراري 57 × 40 مم",
+   "category": "thermal-paper-rolls-13",
+   "subcategory": "thermal-paper-rolls-span-roll-17",
+   "industries": [
+    "healthcare-31",
+    "restaurants-26",
+    "retail-27"
+   ],
+   "specs": [
+    {
+     "key": "type",
+     "label": "Type",
+     "labelAr": "النوع",
+     "value": "Thermal MADA Roll"
+    },
+    {
+     "key": "size",
+     "label": "Size",
+     "labelAr": "المقاس",
+     "value": "57 × 40 mm"
+    },
+    {
+     "key": "core",
+     "label": "Core",
+     "labelAr": "قطر اللب",
+     "value": "15–17 mm"
+    },
+    {
+     "key": "perCarton",
+     "label": "Per carton",
+     "labelAr": "الكمية في الكرتون",
+     "value": "100 rolls"
+    },
+    {
+     "key": "weight",
+     "label": "Weight",
+     "labelAr": "الوزن",
+     "value": "55 GSM"
+    }
+   ],
+   "images": [
+    "/products/48-1.png",
+    "/products/48-2.png"
+   ],
+   "duplicateSku": false
+  },
+  {
+   "id": 53,
+   "slug": "tr8040-handheld-thermal-roll-80x40mm-53",
+   "sku": "TR804055",
+   "odooName": "Handheld Thermal Roll 80x40mm",
+   "name": "Handheld thermal roll 80 × 40 mm",
+   "nameAr": "رول حراري للأجهزة المحمولة 80 × 40 مم",
+   "category": "thermal-paper-rolls-13",
+   "subcategory": "thermal-paper-rolls-handheld-roll-19",
+   "industries": [
+    "logistics-30",
+    "restaurants-26"
+   ],
+   "specs": [
+    {
+     "key": "type",
+     "label": "Type",
+     "labelAr": "النوع",
+     "value": "Thermal Handheld Roll"
+    },
+    {
+     "key": "size",
+     "label": "Size",
+     "labelAr": "المقاس",
+     "value": "80 × 40 mm"
+    },
+    {
+     "key": "core",
+     "label": "Core",
+     "labelAr": "قطر اللب",
+     "value": "15–17 mm"
+    },
+    {
+     "key": "perCarton",
+     "label": "Per carton",
+     "labelAr": "الكمية في الكرتون",
+     "value": "100 rolls"
+    },
+    {
+     "key": "weight",
+     "label": "Weight",
+     "labelAr": "الوزن",
+     "value": "55 GSM"
+    }
+   ],
+   "images": [
+    "/products/53-1.png",
+    "/products/53-2.png"
+   ],
+   "duplicateSku": false
+  },
+  {
+   "id": 47,
+   "slug": "tr8060-thermal-cashier-roll-80x60mm-47",
+   "sku": "TR806048",
+   "odooName": "Thermal Cashier Roll 80x60mm",
+   "name": "Thermal cashier roll 80 × 60 mm",
+   "nameAr": "رول كاشير حراري 80 × 60 مم",
+   "category": "thermal-paper-rolls-13",
+   "subcategory": "thermal-paper-rolls-cashier-roll-16",
+   "industries": [
+    "healthcare-31",
+    "restaurants-26"
+   ],
+   "specs": [
+    {
+     "key": "type",
+     "label": "Type",
+     "labelAr": "النوع",
+     "value": "Thermal POS Roll"
+    },
+    {
+     "key": "size",
+     "label": "Size",
+     "labelAr": "المقاس",
+     "value": "80 × 60 mm"
+    },
+    {
+     "key": "core",
+     "label": "Core",
+     "labelAr": "قطر اللب",
+     "value": "15–17 mm"
+    },
+    {
+     "key": "perCarton",
+     "label": "Per carton",
+     "labelAr": "الكمية في الكرتون",
+     "value": "50 rolls"
+    },
+    {
+     "key": "weight",
+     "label": "Weight",
+     "labelAr": "الوزن",
+     "value": "48 GSM"
+    }
+   ],
+   "images": [
+    "/products/47-1.png",
+    "/products/47-2.png"
+   ],
+   "duplicateSku": false
+  },
+  {
+   "id": 46,
+   "slug": "tr8065-thermal-cashier-roll-80x65mm-46",
+   "sku": "TR806555",
+   "odooName": "Thermal Cashier Roll 80x65mm",
+   "name": "Thermal cashier roll 80 × 65 mm",
+   "nameAr": "رول كاشير حراري 80 × 65 مم",
+   "category": "thermal-paper-rolls-13",
+   "subcategory": "thermal-paper-rolls-cashier-roll-16",
+   "industries": [
+    "healthcare-31",
+    "logistics-30"
+   ],
+   "specs": [
+    {
+     "key": "type",
+     "label": "Type",
+     "labelAr": "النوع",
+     "value": "Thermal POS Roll"
+    },
+    {
+     "key": "size",
+     "label": "Size",
+     "labelAr": "المقاس",
+     "value": "80 × 65 mm"
+    },
+    {
+     "key": "core",
+     "label": "Core",
+     "labelAr": "قطر اللب",
+     "value": "15–17 mm"
+    },
+    {
+     "key": "perCarton",
+     "label": "Per carton",
+     "labelAr": "الكمية في الكرتون",
+     "value": "50 rolls"
+    },
+    {
+     "key": "weight",
+     "label": "Weight",
+     "labelAr": "الوزن",
+     "value": "55 GSM"
+    }
+   ],
+   "images": [
+    "/products/46-1.png",
+    "/products/46-2.png"
+   ],
+   "duplicateSku": false
+  },
+  {
+   "id": 295,
+   "slug": "tr8070-plus-thermal-cashier-roll-80x70mm-plus-295",
+   "sku": "TR807070",
+   "odooName": "Thermal Cashier Roll 80x70mm - PLUS",
+   "name": "Thermal cashier roll 80 × 70 mm — Plus grade",
+   "nameAr": "رول كاشير حراري 80 × 70 مم — درجة بلس",
+   "category": "thermal-paper-rolls-13",
+   "subcategory": "thermal-paper-rolls-cashier-roll-16",
+   "industries": [],
+   "specs": [
+    {
+     "key": "type",
+     "label": "Type",
+     "labelAr": "النوع",
+     "value": "Thermal POS Roll"
+    },
+    {
+     "key": "size",
+     "label": "Size",
+     "labelAr": "المقاس",
+     "value": "80 × 70 mm"
+    },
+    {
+     "key": "core",
+     "label": "Core",
+     "labelAr": "قطر اللب",
+     "value": "17–19 mm"
+    },
+    {
+     "key": "perCarton",
+     "label": "Per carton",
+     "labelAr": "الكمية في الكرتون",
+     "value": "50 rolls"
+    },
+    {
+     "key": "weight",
+     "label": "Weight",
+     "labelAr": "الوزن",
+     "value": "70 GSM"
+    }
+   ],
+   "images": [
+    "/products/295-1.png",
+    "/products/295-2.png",
+    "/products/295-3.png"
+   ],
+   "duplicateSku": true
+  },
+  {
+   "id": 1,
+   "slug": "tr8070-thermal-cashier-roll-80x70mm-1",
+   "sku": "TR807070",
+   "odooName": "Thermal Cashier Roll 80x70mm",
+   "name": "Thermal cashier roll 80 × 70 mm",
+   "nameAr": "رول كاشير حراري 80 × 70 مم",
+   "category": "thermal-paper-rolls-13",
+   "subcategory": "thermal-paper-rolls-cashier-roll-16",
+   "industries": [
+    "healthcare-31",
+    "restaurants-26",
+    "retail-27"
+   ],
+   "specs": [
+    {
+     "key": "type",
+     "label": "Type",
+     "labelAr": "النوع",
+     "value": "Thermal POS Roll"
+    },
+    {
+     "key": "size",
+     "label": "Size",
+     "labelAr": "المقاس",
+     "value": "80 × 70 mm"
+    },
+    {
+     "key": "core",
+     "label": "Core",
+     "labelAr": "قطر اللب",
+     "value": "17–19 mm"
+    },
+    {
+     "key": "perCarton",
+     "label": "Per carton",
+     "labelAr": "الكمية في الكرتون",
+     "value": "50 rolls"
+    },
+    {
+     "key": "weight",
+     "label": "Weight",
+     "labelAr": "الوزن",
+     "value": "70 GSM"
+    }
+   ],
+   "images": [
+    "/products/1-1.png",
+    "/products/1-2.png"
+   ],
+   "duplicateSku": true
+  }
+ ]
+}

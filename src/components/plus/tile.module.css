@@ -1,0 +1,42 @@
+.tile {
+  position: relative; isolation: isolate; display: flex; flex-direction: column; justify-content: flex-end;
+  aspect-ratio: 4 / 5.2; border-radius: var(--r); overflow: hidden; background: var(--tile);
+  box-shadow: 0 0 0 1px rgba(15, 42, 68, .05); transition: transform .45s var(--ease), box-shadow .45s var(--ease);
+}
+.tile:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
+.tile:has(h3 a:focus-visible) { outline: 3px solid var(--blue); outline-offset: 3px; }
+
+.media { position: absolute; inset: 0; z-index: -1; }
+.media img { object-fit: cover; transition: transform .8s var(--ease); }
+.tile:hover .media img { transform: scale(1.06); }
+/* Product shots (sub-categories): zoom toward the product so the printed label strip sits under the panel */
+.tile:not([data-photo]) .media img { transform: scale(1.42); transform-origin: 50% 36%; }
+.tile:not([data-photo]):hover .media img { transform: scale(1.48); }
+/* Category photos are on white: lift them slightly off the bottom panel */
+.tile[data-photo] .media { inset: 0 0 26%; }
+.tile[data-photo] .media img { object-fit: contain; padding: 8% 8% 0; }
+
+.body {
+  display: flex; flex-direction: column; gap: 4px; padding: 18px 18px 16px;
+  background: rgba(255, 255, 255, .9); border-top: 1px solid rgba(255, 255, 255, .7); backdrop-filter: blur(14px) saturate(1.4); -webkit-backdrop-filter: blur(14px) saturate(1.4);
+  min-height: 40%;
+}
+.kicker { font-size: 11.5px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--blue-600); }
+:global([dir='rtl']) .kicker { letter-spacing: 0; }
+.body h3 { font-family: var(--font-serif); font-size: 25px; font-weight: 600; line-height: 1.08; letter-spacing: -.005em; }
+:global([dir='rtl']) .body h3 { font-size: 20px; line-height: 1.35; }
+.body h3 a { text-decoration: none; color: inherit; }
+.body h3 a::after { content: ''; position: absolute; inset: 0; }
+.body h3 a:focus-visible { outline: none; }
+.body p { font-size: 13.5px; color: var(--muted); line-height: 1.45; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.foot { margin-top: auto; padding-top: 10px; display: flex; align-items: center; justify-content: space-between; font-size: 13px; font-weight: 600; color: var(--ink-2); }
+.go { width: 34px; height: 34px; border-radius: 50%; display: grid; place-items: center; background: var(--ink); color: #fff; transition: background .2s, transform .3s var(--ease); }
+.go svg { width: 15px; height: 15px; }
+:global([dir='rtl']) .go svg { transform: scaleX(-1); }
+.tile:hover .go { background: var(--blue-600); transform: translateX(3px); }
+:global([dir='rtl']) .tile:hover .go { transform: translateX(-3px); }
+
+@media (max-width: 600px) {
+  .body { padding: 14px; }
+  .body h3 { font-size: 21px; }
+}
