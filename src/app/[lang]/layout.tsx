@@ -9,7 +9,8 @@ import '../globals.css';
 
 // One type system for the whole family, taken from the Legal Services brand guide:
 // Cormorant Garamond for display, Libre Franklin (stand-in for Acumin) for text,
-// IBM Plex Sans Arabic (stand-in for Frutiger LT Arabic) for Arabic.
+// Frutiger LT Arabic for Arabic (declared in globals.css, files in public/fonts/frutiger-lt-arabic),
+// with IBM Plex Sans Arabic as the fallback while the files load or if they are missing.
 const display = Cormorant_Garamond({
   subsets: ['latin'], weight: ['400', '500', '600'], style: ['normal', 'italic'],
   variable: '--font-display', display: 'swap',
@@ -18,7 +19,7 @@ const text = Libre_Franklin({ subsets: ['latin'], weight: ['300', '400', '500', 
 const arabic = IBM_Plex_Sans_Arabic({
   subsets: ['arabic'],
   weight: ['300', '400', '500', '600'],
-  variable: '--font-arabic',
+  variable: '--font-arabic-fallback',
   display: 'swap',
 });
 

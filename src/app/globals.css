@@ -5,7 +5,18 @@
 
 * { margin: 0; padding: 0; }
 
+/* Arabic brand face: Frutiger LT Arabic. Only 45 Light is installed, so it serves
+   every weight (the browser synthesises bold for 600+). Add 55 Roman / 65 Bold files
+   here as extra @font-face rules to get true weights. IBM Plex Sans Arabic
+   (--font-arabic-fallback, loaded in the root layout) covers anything missing. */
+@font-face {
+  font-family: 'Frutiger LT Arabic';
+  src: url('/fonts/frutiger-lt-arabic/FrutigerLTArabic-45Light.ttf') format('truetype');
+  font-weight: 300; font-style: normal; font-display: swap;
+}
+
 :root {
+  --font-arabic: 'Frutiger LT Arabic', var(--font-arabic-fallback), sans-serif;
   --ink: #1d1a1b;
   --muted: #6f6866;
   --line: #e4dfdb;

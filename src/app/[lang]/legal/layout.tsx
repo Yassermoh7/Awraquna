@@ -16,7 +16,7 @@ const serif = Cormorant_Garamond({
 });
 // The guide specifies Acumin Variable Concept (Adobe Fonts, licence required).
 // Libre Franklin is a close free stand-in until the Acumin web licence is in place.
-// Arabic uses IBM Plex Sans Arabic (loaded in the root layout) in place of Frutiger LT Arabic.
+// Arabic uses Frutiger LT Arabic (declared in globals.css via the root layout).
 const sans = Libre_Franklin({
   subsets: ['latin'], weight: ['300', '400', '500', '600'],
   variable: '--legal-sans', display: 'swap',
