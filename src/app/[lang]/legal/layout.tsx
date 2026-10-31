@@ -14,8 +14,8 @@ const serif = Cormorant_Garamond({
   subsets: ['latin'], weight: ['400', '500', '600'], style: ['normal', 'italic'],
   variable: '--legal-serif', display: 'swap',
 });
-// The guide specifies Acumin Variable Concept (Adobe Fonts, licence required).
-// Libre Franklin is a close free stand-in until the Acumin web licence is in place.
+// The guide specifies Acumin Variable Concept, loaded from Adobe Fonts in the root layout
+// when NEXT_PUBLIC_ADOBE_FONTS_KIT is set. Libre Franklin is the fallback until then.
 // Arabic uses Frutiger LT Arabic (declared in globals.css via the root layout).
 const sans = Libre_Franklin({
   subsets: ['latin'], weight: ['300', '400', '500', '600'],

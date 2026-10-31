@@ -5,7 +5,7 @@
   --cream: #f3edea; --water: #ede4e3; --ink: #2b1a1d; --muted: #6f5d60; --line: #e4d9d7;
   --plus: #5798c9;
   --serif: var(--legal-serif), Georgia, serif;
-  --sans: var(--legal-sans), var(--font-arabic), system-ui, sans-serif;
+  --sans: 'acumin-variable', var(--legal-sans), var(--font-arabic), system-ui, sans-serif;
   background: var(--white); color: var(--ink);
   font: 300 16px/1.65 var(--sans);
   min-height: 100vh;

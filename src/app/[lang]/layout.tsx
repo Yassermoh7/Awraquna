@@ -8,7 +8,8 @@ import { site } from '@/lib/site';
 import '../globals.css';
 
 // One type system for the whole family, taken from the Legal Services brand guide:
-// Cormorant Garamond for display, Libre Franklin (stand-in for Acumin) for text,
+// Cormorant Garamond for display, Acumin Variable Concept for text (from the Adobe Fonts
+// web project in NEXT_PUBLIC_ADOBE_FONTS_KIT; Libre Franklin is the fallback until it is set),
 // Frutiger LT Arabic for Arabic (declared in globals.css, files in public/fonts/frutiger-lt-arabic),
 // with IBM Plex Sans Arabic as the fallback while the files load or if they are missing.
 const display = Cormorant_Garamond({
@@ -22,6 +23,9 @@ const arabic = IBM_Plex_Sans_Arabic({
   variable: '--font-arabic-fallback',
   display: 'swap',
 });
+
+// Adobe Fonts web project ID (e.g. "abc1def"), serving Acumin Variable Concept as `acumin-variable`.
+const adobeFontsKit = process.env.NEXT_PUBLIC_ADOBE_FONTS_KIT;
 
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
@@ -38,6 +42,12 @@ export default async function RootLayout({ children, params }: LayoutProps<'/[la
   if (!isLocale(lang)) notFound();
   return (
     <html lang={lang} dir={dirFor(lang)} data-scroll-behavior="smooth" className={`${display.variable} ${text.variable} ${arabic.variable}`}>
+      {adobeFontsKit && (
+        <head>
+          <link rel="preconnect" href="https://use.typekit.net" crossOrigin="" />
+          <link rel="stylesheet" href={`https://use.typekit.net/${adobeFontsKit}.css`} />
+        </head>
+      )}
       <body>
         {children}
         <Suspense fallback={null}><Motion /></Suspense>

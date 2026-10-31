@@ -40,13 +40,13 @@
   --btn-h-sm: 40px;
   --btn-pad: 0 22px;
   --btn-font: 500 15px/1 var(--font-sans);
-  --font-sans: var(--font-text), var(--font-arabic), system-ui, sans-serif;
+  --font-sans: 'acumin-variable', var(--font-text), var(--font-arabic), system-ui, sans-serif;
   --font-serif: var(--font-display), Georgia, serif;
 }
 
 html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
 html[dir='rtl'] {
-  --font-sans: var(--font-arabic), var(--font-text), system-ui, sans-serif;
+  --font-sans: var(--font-arabic), 'acumin-variable', var(--font-text), system-ui, sans-serif;
   --font-serif: var(--font-arabic), serif;
 }
 
