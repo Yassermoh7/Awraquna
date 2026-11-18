@@ -2,10 +2,11 @@ import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import DivisionCircles, { type Division } from '@/components/group/DivisionCircles';
-import GroupHeader from '@/components/group/GroupHeader';
+import { GroupFooter, GroupTopBar } from '@/components/group/GroupChrome';
 import { alternates, isLocale, localePath, type Locale } from '@/lib/i18n';
 import { legalPath, plusPath } from '@/lib/links';
 import { site, whatsappLink } from '@/lib/site';
+import { groupChrome } from '@/content/group';
 import previewHeights from '@/data/previews.json';
 import styles from './group.module.css';
 
@@ -15,8 +16,6 @@ const copy = {
     metaTitle: 'Awraquna Group | Business Supplies & Legal Services in Saudi Arabia',
     metaDescription:
       'Awraquna Group has two divisions: Awraquna Plus supplies thermal paper, labels and POS consumables across Saudi Arabia, and Awraquna Legal Services registers and protects trademarks, industrial designs and patents in Saudi Arabia and Egypt.',
-    nav: { home: 'Home', about: 'About Us', divisions: 'Our Divisions', news: 'News', contact: 'Contact' },
-    lang: 'العربية', menu: 'Open menu', close: 'Close menu',
     eyebrow: 'Two divisions',
     title: 'A stronger tomorrow',
     lede: 'From essential supplies to legal solutions, Awraquna supports your business at every step.',
@@ -52,14 +51,11 @@ const copy = {
       plusLabel: 'Supplies and orders', legalLabel: 'Legal enquiries',
       plusCta: 'Contact Awraquna Plus', legalCta: 'Contact Legal Services', whatsapp: 'WhatsApp',
     },
-    footer: { rights: '© 2026 Awraquna Group. All rights reserved.', privacy: 'Privacy Policy', terms: 'Terms of Service' },
   },
   ar: {
     metaTitle: 'مجموعة أوراقنا | مستلزمات الأعمال والخدمات القانونية في السعودية',
     metaDescription:
       'تضم مجموعة أوراقنا قسمين: أوراقنا بلس لتوريد الورق الحراري والملصقات ومستلزمات نقاط البيع في المملكة، وأوراقنا للخدمات القانونية لتسجيل وحماية العلامات التجارية والنماذج الصناعية وبراءات الاختراع في السعودية ومصر.',
-    nav: { home: 'الرئيسية', about: 'من نحن', divisions: 'أقسامنا', news: 'الأخبار', contact: 'تواصل معنا' },
-    lang: 'English', menu: 'فتح القائمة', close: 'إغلاق القائمة',
     eyebrow: 'قسمان',
     title: 'غدٌ أقوى',
     lede: 'من المستلزمات الأساسية إلى الحلول القانونية، تدعم أوراقنا أعمالك في كل خطوة.',
@@ -95,7 +91,6 @@ const copy = {
       plusLabel: 'المستلزمات والطلبات', legalLabel: 'الاستفسارات القانونية',
       plusCta: 'تواصل مع أوراقنا بلس', legalCta: 'تواصل مع الخدمات القانونية', whatsapp: 'واتساب',
     },
-    footer: { rights: '© 2026 مجموعة أوراقنا. جميع الحقوق محفوظة.', privacy: 'سياسة الخصوصية', terms: 'شروط الخدمة' },
   },
 } as const;
 
@@ -145,7 +140,6 @@ export default async function GroupHome({ params }: PageProps<'/[lang]'>) {
   const { lang: raw } = await params;
   const lang: Locale = isLocale(raw) ? raw : 'en';
   const t = copy[lang];
-  const other: Locale = lang === 'en' ? 'ar' : 'en';
 
   const divisions: Division[] = [
     {
@@ -184,21 +178,9 @@ export default async function GroupHome({ params }: PageProps<'/[lang]'>) {
   return (
     <div className={styles.page}>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(orgJsonLd) }} />
-      <a className="skip-link" href="#main">{lang === 'ar' ? 'انتقل إلى المحتوى' : 'Skip to content'}</a>
+      <a className="skip-link" href="#main">{groupChrome[lang].skip}</a>
 
-      <GroupHeader
-        homeHref={localePath(lang, '/')}
-        nav={[
-          { href: localePath(lang, '/'), label: t.nav.home, current: true },
-          { href: '#about', label: t.nav.about },
-          { href: '#divisions', label: t.nav.divisions },
-          { href: localePath(lang, '/blog'), label: t.nav.news },
-          { href: '#contact', label: t.nav.contact },
-        ]}
-        langSwitch={{ href: localePath(other, '/'), label: t.lang, hrefLang: other }}
-        menuLabel={t.menu}
-        closeLabel={t.close}
-      />
+      <GroupTopBar lang={lang} page="home" path="/" />
 
       <main id="main">
         {/* ---------- Hero ---------- */}
@@ -209,7 +191,8 @@ export default async function GroupHome({ params }: PageProps<'/[lang]'>) {
             which is what puts the circles "behind" the staircase and the books.
           */}
           <div className={styles.scene} data-scene>
-            <Image className={styles.sceneBg} src="/images/group/hero-scene.jpg" alt="" fill preload sizes="(max-width: 760px) 200vw, 100vw" />
+            {/* data-tone-source: the header reads this photo to pick the light or dark logo */}
+            <Image className={styles.sceneBg} src="/images/group/hero-scene.jpg" alt="" fill preload sizes="(max-width: 760px) 200vw, 100vw" data-tone-source="" />
             <div className={styles.heroCopy}>
               <p className={styles.eyebrow}>{t.eyebrow}</p>
               <h1 id="hero-title" className={styles.heroTitle}>{t.title}</h1>
@@ -303,27 +286,7 @@ export default async function GroupHome({ params }: PageProps<'/[lang]'>) {
         </section>
       </main>
 
-      <footer className={styles.footer}>
-        <div className={styles.footerInner}>
-          <Image src="/brand/group-logo-white.png" alt="Awraquna Group" width={900} height={384} sizes="130px" className={styles.footerLogo} />
-          <nav aria-label="Footer">
-            <a href={localePath(lang, '/')}>{t.nav.home}</a>
-            <a href="#about">{t.nav.about}</a>
-            <Link href={plusPath(lang)}>Awraquna Plus</Link>
-            <Link href={legalPath(lang)}>{lang === 'ar' ? 'الخدمات القانونية' : 'Legal Services'}</Link>
-            <Link href={localePath(lang, '/blog')}>{t.nav.news}</Link>
-            <a href="#contact">{t.nav.contact}</a>
-          </nav>
-          <a className={styles.footerLang} href={localePath(other, '/')} hrefLang={other} lang={other}>{t.lang}</a>
-        </div>
-        <div className={styles.footerBottom}>
-          <span>{t.footer.rights}</span>
-          <span>
-            <Link href={localePath(lang, '/privacy')}>{t.footer.privacy}</Link>
-            <Link href={localePath(lang, '/terms')}>{t.footer.terms}</Link>
-          </span>
-        </div>
-      </footer>
+      <GroupFooter lang={lang} page="home" path="/" />
     </div>
   );
 }

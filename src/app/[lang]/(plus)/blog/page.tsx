@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { toLocale } from '@/components/plus/helpers';
 import pages from '@/components/plus/pages.module.css';
 import ui from '@/components/plus/ui.module.css';
-import { getPlusCopy } from '@/content/plus';
+import { getPlusCopy, plusConfig } from '@/content/plus';
 import { alternates, localePath } from '@/lib/i18n';
 
 export async function generateMetadata({ params }: PageProps<'/[lang]/blog'>): Promise<Metadata> {
@@ -13,8 +13,7 @@ export async function generateMetadata({ params }: PageProps<'/[lang]/blog'>): P
   return { title: t.blogTitle, description: t.blogDescription, alternates: alternates('/blog', lang) };
 }
 
-// Decorative pictures for the four updates, in the order they appear in the copy.
-const postImages = ['/images/plus/cat-paper.jpg', '/images/plus/industry-logistics.jpg', '/images/plus/steps/choose.jpg', '/images/plus/pos-counter.jpg'];
+const postImages = plusConfig.newsImages;
 
 export default async function NewsPage({ params }: PageProps<'/[lang]/blog'>) {
   const lang = toLocale((await params).lang);

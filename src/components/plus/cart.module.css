@@ -9,7 +9,7 @@
 
 .lines { list-style: none; }
 .line { display: grid; grid-template-columns: 96px 1fr auto; gap: 18px; align-items: center; padding: 14px; margin-bottom: 10px; border-radius: 18px; background: #fff; box-shadow: var(--shadow); }
-.thumb { position: relative; width: 96px; height: 96px; border-radius: 14px; background: var(--tile); overflow: hidden; }
+.thumb { position: relative; display: block; flex: none; width: 96px; height: 96px; border-radius: 14px; background: var(--tile); overflow: hidden; }
 .thumb img { object-fit: cover; }
 .lineInfo { display: grid; gap: 2px; min-width: 0; }
 .lineInfo a { font-weight: 600; font-size: 16.5px; text-decoration: none; }

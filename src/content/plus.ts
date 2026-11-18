@@ -31,6 +31,8 @@ export const plusConfig = {
     'logistics-30': '/images/plus/industry-logistics.jpg',
     'healthcare-31': '/images/plus/industry-healthcare.jpg',
   } as Record<string, string>,
+  /** Pictures for the news posts, in the order the posts appear in the copy (used by /blog and the group /news page). */
+  newsImages: ['/images/plus/cat-paper.jpg', '/images/plus/industry-logistics.jpg', '/images/plus/steps/choose.jpg', '/images/plus/pos-counter.jpg'],
   /** Widths offered in the "Find your roll" selector. */
   finderWidths: ['80', '57', '100', '110', '60', '50'],
   mapEmbed: 'https://www.google.com/maps?q=King%20Salman%20bin%20Abdulaziz%20Road%2C%20Al-Malqa%2C%20Riyadh&output=embed',

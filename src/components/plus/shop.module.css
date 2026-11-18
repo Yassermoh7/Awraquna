@@ -7,7 +7,9 @@
 .shopHead { padding-block: 36px 40px; background: radial-gradient(80% 90% at 90% 0%, var(--blue-50), transparent 60%), linear-gradient(180deg, #f7fafc, #fff); }
 .shopHead h1 { font-size: clamp(44px, 5vw, 72px); line-height: 1; margin: 20px 0 12px; }
 .shopHead p { color: var(--ink-2); font-size: 18px; max-width: 40em; }
-.quick { margin-top: 28px; display: flex; gap: 10px; overflow-x: auto; scrollbar-width: none; padding-bottom: 4px; }
+/* The row scrolls sideways, which also clips vertically: the padding (cancelled by the negative margin)
+   leaves room for the chips' hover lift and border so they aren't cut off. */
+.quick { margin: 22px -6px 0; display: flex; gap: 10px; overflow-x: auto; scrollbar-width: none; padding: 6px 6px 8px; }
 .quick::-webkit-scrollbar { display: none; }
 .quickLink {
   flex: none; display: inline-flex; align-items: center; gap: 10px; height: 52px; padding-inline: 6px 18px; border-radius: var(--radius-btn);

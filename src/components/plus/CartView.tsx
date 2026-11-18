@@ -85,9 +85,9 @@ export default function CartView({ lang, products }: { lang: Locale; products: P
         <ul className={styles.lines}>
           {lines.map((l) => (
             <li key={l.id} className={styles.line}>
-              <div className={styles.thumb}>
+              <Link className={styles.thumb} href={localePath(lang, `/shop/${l.product.slug}`)} tabIndex={-1} aria-hidden="true">
                 {l.product.image && <Image src={l.product.image} alt="" fill sizes="80px" />}
-              </div>
+              </Link>
               <div className={styles.lineInfo}>
                 <Link href={localePath(lang, `/shop/${l.product.slug}`)}>{l.product.name}</Link>
                 <span dir="ltr" className={styles.sku}>{l.product.sku}</span>

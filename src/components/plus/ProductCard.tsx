@@ -32,12 +32,13 @@ export default function ProductCard({ product: p, categories, lang, flag, headin
   const meta = pack ?? (size && !name.includes(size.split(' ')[0]) ? localiseValue(size, lang) : '');
   return (
     <article className={styles.card} {...(reveal !== undefined ? { 'data-reveal': '', 'data-reveal-delay': String(reveal) } : {})}>
-      <div className={styles.media}>
+      {/* The photo links to the product too; it is a duplicate of the title link, so it stays out of the tab order. */}
+      <Link className={styles.media} href={productHref(lang, p)} tabIndex={-1} aria-hidden="true">
         {p.images[0] && (
-          <Image src={p.images[0]} alt={name} fill sizes={sizes ?? '(max-width: 600px) 50vw, (max-width: 1100px) 33vw, 300px'} />
+          <Image src={p.images[0]} alt="" fill sizes={sizes ?? '(max-width: 600px) 50vw, (max-width: 1100px) 33vw, 300px'} />
         )}
-        {flag && <span className={styles.flag}>{flag}</span>}
-      </div>
+      </Link>
+      {flag && <span className={styles.flag}>{flag}</span>}
       <div className={styles.panel}>
         <div className={styles.text}>
           <span className={styles.type}>{categoryLabel(p.subcategory ?? p.category, categories, lang)}</span>

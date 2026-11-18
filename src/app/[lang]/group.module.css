@@ -116,22 +116,6 @@
 .contactGrid .btn, .contactGrid .link { font-size: 14px; }
 .muted { color: var(--muted); }
 
-/* ---------- Footer ---------- */
-.footer { background: #2b2124; color: rgba(250, 247, 245, .78); padding: 48px clamp(18px, 4vw, 48px) 28px; }
-.footerInner {
-  max-width: 1180px; margin: 0 auto; display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: 32px;
-  padding-bottom: 28px; border-bottom: 1px solid rgba(250, 247, 245, .14);
-}
-.footerLogo { width: 130px; height: auto; }
-.footer nav { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px 28px; }
-.footer a { color: inherit; text-decoration: none; font-size: 14px; }
-.footer a:hover { color: #fff; }
-.footerBottom {
-  max-width: 1180px; margin: 0 auto; padding-top: 20px; display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap;
-  font-size: 13px;
-}
-.footerBottom span { display: flex; gap: 22px; }
-
 @media (max-width: 860px) {
   .scene { width: 100%; aspect-ratio: auto; padding: 96px 20px 56px; display: grid; gap: 28px; container-type: normal; mask-image: none; }
   .hero::before { display: none; }
@@ -145,8 +129,6 @@
   .vision { grid-template-columns: 1fr; }
   .visionImage { min-height: 300px; order: -1; }
   .cards, .contactGrid { grid-template-columns: 1fr; }
-  .footerInner { grid-template-columns: 1fr; justify-items: start; }
-  .footer nav { justify-content: flex-start; }
 }
 
 /* Plus always on the left and Legal on the right, matching the circles, in both languages */
